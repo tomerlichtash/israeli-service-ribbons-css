@@ -4,7 +4,14 @@ html, body {
     font-family: Patua One;
     text-align: center;
     margin: 0;
-    color: #00A;
+    color: #34A;
+}
+
+a {
+    color: #404040;
+}
+a:hover {
+    color: #F00;
 }
 
 figure {
@@ -40,17 +47,18 @@ h1 span {
     margin: 0 2rem;
     letter-spacing: 0.4rem;
     line-height: 8rem;
-    color: #00A;
-    border-top: 7px double #00A;
-    border-bottom: 7px double #00A;
+    border: 10px double;
+    border-left: none;
+    border-right: none;
 }
 
-h1::before, h1::after {
+/* h1::before, h1::after {
     content: '***';
     position: relative;
-    top: 5px;
-    letter-spacing: 2rem;
-}
+    display: inline-block;
+    top: 0.5rem;
+    letter-spacing: 1rem;
+} */
 
 .container {
     margin: 0 auto;
@@ -86,7 +94,7 @@ h1::before, h1::after {
     text-align: center;
     position: relative;
     border-radius: 6px;
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
 }
 
 .item:hover {
@@ -94,6 +102,9 @@ h1::before, h1::after {
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.25);
 }
 
+.item:hover h2 {
+    opacity: 1;
+}
 .item:hover code {
     opacity: 1;
 }
@@ -103,18 +114,23 @@ h1::before, h1::after {
 }
 
 .item h2 {
+    opacity: 0.5;
     width: 100%;
     font-weight: 900;
     letter-spacing: 0.2rem;
     font-size: 4rem;
-    color: #222;
     text-align: center;
 }
 
 .item img {
+    /* display: none; */
     margin: 1rem 0;
+    top: 1rem;
+    left: 1rem;
     transition: 75ms all ease-in-out;
-    position: relative;
+    /* position: absolute; */
+    width: 100px
+
 }
 
 .footer {
@@ -197,7 +213,6 @@ h1::before, h1::after {
     overflow: hidden;
 }
 .container.alt pre {
-    max-width: 600px;
     margin: 0 auto;
 }
 .container.alt code {
