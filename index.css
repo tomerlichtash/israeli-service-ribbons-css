@@ -1,0 +1,213 @@
+/*
+  Israeli Campaign Ribbons in Pure CSS
+  ----------------------------------------------------
+
+  base colors:
+  ----------------------------------------------------
+  blue: 184ea4
+  light blue: 4d81ba
+  cyan: 92c8e2
+  red: ab3122
+  ornage: e27e33
+  light orange: bd7755
+  purple: 541a95
+  green: 26972d
+  off-white: f4f4f4
+*/
+
+body {
+    font-family: "Courier New", monospace;
+    text-align: center;
+  }
+  
+  header {
+    padding: 4rem 0;
+  }
+  
+  h1 {
+    text-transform: uppercase;
+    font-weight: 100;
+    margin: 0;
+    display: inline-block;
+  }
+  h1 span {
+    display: inline-block;
+    margin: 0 2rem;
+    border-top: 7px double #000;
+    border-bottom: 7px double #000;
+  }
+  h1::before,
+  h1::after {
+    content: '***';
+    position: relative;
+    top: 5px;
+    letter-spacing: 5px;
+  }
+  
+  .item {
+    display: inline-block;
+    vertical-align: top;
+    padding: 2rem;
+    transition: 125ms all ease-in-out;
+    position: relative;
+    border-radius: 6px;
+  }
+  .item:hover {
+    opacity: 1;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.25);
+  }
+  .item h2 {
+    width: 100%;
+    font-weight: 900;
+    font-size: 1rem;
+    text-align: center;
+  }
+  .item img {
+    margin: 1rem 0;
+    transition: 75ms all ease-in-out;
+    position: relative;
+  /*   visibility: hidden;
+    opacity: 0;
+    top: -50px; */
+  }
+  .item:hover img {
+    visibility: visible;
+    top: 0;
+    opacity: 1;
+  }
+  
+  .war {
+    position: relative;
+    justify-content: center;
+    display: flex;
+    z-index: 1;
+    overflow: hidden;
+    height: 38px; /*37.7952755906px*/
+    width: 151px; /*151.1811023622px*/
+    box-shadow: 0 0 15px rgba(0, 0, 0, .2);
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+  }
+  
+  .a1, .b1 {
+    flex: 1;
+    position: relative;
+  }
+  
+  .komemiut {
+    background: #184ea4;
+  }
+  .komemiut .a1 {
+    max-width: 7px;
+    background: #92c8e2;
+    border-right: 7px solid #f4f4f4;
+    border-left: 7px solid #f4f4f4;
+  }
+  .komemiut .b1 {
+    margin: 0 1.65rem;
+    max-width: 7px;
+    background: #ab3122;
+    position: relative;
+  }
+  
+  .sinai {
+    background: #e27e33;
+  }
+  .sinai .a1 {
+    max-width: 16px;
+    background: #184ea4;
+  }
+  .sinai .b1 {
+    border-right: 8px solid #ab3122;
+    border-left: 8px solid #ab3122;
+    max-width: 24px;
+    background: #92c8e2;
+    position: relative;
+  }
+  
+  .sixday {
+    background: #b00;
+  }
+  .sixday .a1 {
+    max-width: 26px;
+    background: #184ea4;
+  }
+  .sixday .b1 {
+    max-width: 12px;
+    background: #92c8e2;
+    border-right: 12px solid #f4f4f4;
+    border-left: 12px solid #f4f4f4;
+    position: relative;
+  }
+  
+  .hatasha {
+    background: #bd7755;
+  }
+  .hatasha .a1 {
+    max-width: 10px;
+    background: #92c8e2;
+    border-right: 10px solid #f4f4f4;
+    border-left: 10px solid #f4f4f4;
+  }
+  .hatasha .b1 {
+    background: #ab3122;
+    max-width: 14px;
+    margin: 0 1.05rem;
+  }
+  
+  .kippur {
+    background: #4d81ba;
+  }
+  .kippur .a1 {
+    border-right: 8px solid #f4f4f4;
+    border-left: 8px solid #f4f4f4;
+    max-width: 8px;
+  }
+  .kippur .b1 {
+    background: #ab3122;
+    max-width: 44px;
+  }
+  
+  .lebanon {
+    background: #ab3122;
+  }
+  .lebanon .a1 {
+    max-width: 16px;
+    background: #541a95;
+    border-right: 8px solid #f4f4f4;
+    border-left: 8px solid #f4f4f4;
+  }
+  .lebanon .b1 {
+    max-width: 8px;
+    background: #ab3122;
+    border-right: 8px solid #26972d;
+    border-left: 8px solid #26972d;
+  }
+  
+  /* .lebanon2 {} */
+  .lebanon2 .a1 {
+    background: #e27e33; /* todo: lighten */
+  }
+  .lebanon2 .a1::before {
+    content: '';
+    height: 50px;
+    width: 20px;
+    background: #184ea4;
+    width: 12px;
+    position: absolute;
+    border-right: 10px solid #f4f4f4;
+    border-left: 10px solid #f4f4f4;
+  }
+  .lebanon2 .a1:first-child::before {
+    left: 0;
+  }
+  .lebanon2 .a1:last-child::before {
+    right: 0;
+  }
+  .lebanon2 .b1 {
+    background: #ab3122;
+    max-width: 28px;
+    border-right: 10px solid #26972d;
+    border-left: 10px solid #26972d;
+  }
+  
