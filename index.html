@@ -2,14 +2,10 @@
 
 <head>
     <title>ISRAELI CAMPAIGN RIBBONS IN CSS</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./lib/normalize.css">
     <link rel="stylesheet" href="./site.css">
     <link rel="stylesheet" href="./ribbons.css">
     <link rel="stylesheet" href="./lib/styles/docco.css">
-    <script src="./lib/highlight.pack.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
 </head>
 
 <body>
@@ -281,15 +277,15 @@
                     <code class="css">
     .war {
         position: relative;
-        justify-content: center;
-        display: flex;
-        z-index: 1;
         overflow: hidden;
-        height: 38px;
+        display: flex;
+        justify-content: center;
         width: 151px;
+        height: 38px;
         box-shadow: 0 0 15px rgba(0, 0, 0, .2);
-        border-radius: 3px;
         border: 1px solid rgba(0, 0, 0, 0.5);
+        border-radius: 3px;
+        z-index: 1;
     }
                     </code>
                 </pre>
@@ -335,6 +331,8 @@
 </body>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-26201270-12"></script>
+<script src="./lib/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
 <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
