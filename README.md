@@ -13,4 +13,4 @@
 * green: #26972d
 * off-white: #f4f4f4
 
-### Source: https://www.mod.gov.il/Citizen_Service/clalim/otot/Pages/sing-war.aspx
+[Source: https://www.mod.gov.il/Citizen_Service/clalim/otot/Pages/sing-war.aspx]
