@@ -1,60 +1,4 @@
-html, body {
-    font-family: Arial;
-    font-size: 12px;
-    text-align: center;
-    margin: 0;
-}
-header {
-    padding: 4rem 0;
-}
-h1 {
-    font-family: "Courier New", monospace;
-    font-size: 2vw;
-    text-transform: uppercase;
-    font-weight: 100;
-    margin: 0;
-    display: inline-block;
-}
-h1 span {
-    display: inline-block;
-    margin: 0 2rem;
-    border-top: 7px double #000;
-    border-bottom: 7px double #000;
-}
-h1::before, h1::after {
-    content: '***';
-    position: relative;
-    top: 5px;
-    letter-spacing: 5px;
-}
-.item {
-    display: inline-block;
-    vertical-align: top;
-    padding: 2rem;
-    transition: 125ms all ease-in-out;
-    position: relative;
-    border-radius: 6px;
-}
-.item:hover {
-    opacity: 1;
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.25);
-}
-.item h2 {
-    width: 100%;
-    font-weight: 900;
-    font-size: 1rem;
-    text-align: center;
-}
-.item img {
-    margin: 1rem 0;
-    transition: 75ms all ease-in-out;
-    position: relative;
-}
-.item:hover img {
-    visibility: visible;
-    top: 0;
-    opacity: 1;
-}
+
 .war {
     position: relative;
     justify-content: center;
@@ -102,6 +46,7 @@ h1::before, h1::after {
     background: #92c8e2;
     position: relative;
 }
+
 .sixday {
     background: #b00;
 }
@@ -157,12 +102,8 @@ h1::before, h1::after {
     border-right: 8px solid #26972d;
     border-left: 8px solid #26972d;
 }
-/* .lebanon2 {
-}
-*/
 .lebanon2 .a1 {
     background: #e27e33;
-   /* todo: lighten */
 }
 .lebanon2 .a1::before {
     content: '';
@@ -185,73 +126,4 @@ h1::before, h1::after {
     max-width: 28px;
     border-right: 10px solid #26972d;
     border-left: 10px solid #26972d;
-}
-
-.footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    direction: ltr;
-    padding: 2rem 0;
-    font-size: 1rem;
-    text-transform: uppercase;
-    background-color: #f0f0f0;
-}
-  
-.footer .iconList {
-    list-style: none;
-    padding: 1rem 0;
-}
-  
-.footer .iconContainer {
-    display: inline-block;
-    vertical-align: top;
-    margin: 0 0.25rem;
-}
-  
-.footer .icon {
-    background-repeat: no-repeat;
-    display: inline-block;
-    width: 21px;
-    height: 18px;
-    vertical-align: top;
-}
-  
-.footer .icon img {
-    transition: all 200ms ease-in;
-    width: 21px;
-    height: 18px;
-}
-  
-.footer .license {
-    margin: 0 0.35rem;
-}
-.footer  .license::before {
-    content: '(';
-}
-.footer .license::after {
-    content: ')';
-}
-
-.icon.facebook {
-    background-image: url(assets/facebook-f.svg);
-}
-.icon.instagram {
-    background-image: url(assets/instagram.svg);
-}
-.icon.github{
-    background-image: url(assets/github-alt.svg);
-}
-.icon.twitter {
-    background-image: url(assets/twitter.svg);
-}
-.icon.linkedin {
-    background-image: url(assets/linkedin.svg);
-}
-
-.to-github {
-    position: absolute;
-    top: 0;
-    right: 1rem;
 }

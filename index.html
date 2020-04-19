@@ -2,87 +2,309 @@
 
 <head>
     <title>ISRAELI CAMPAIGN RIBBONS IN CSS</title>
-    <link rel="stylesheet" href="./index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./lib/normalize.css">
+    <link rel="stylesheet" href="./site.css">
+    <link rel="stylesheet" href="./ribbons.css">
+    <link rel="stylesheet" href="./lib/styles/docco.css">
+    <script src="./lib/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 </head>
 
 <body>
     <header>
         <h1><span>Israeli Campaign Ribbons in CSS</span></h1>
-        <p class="to-github"><a href="https://github.com/tomerlichtash/israeli-campaign-ribbons-css"
-                target="_blank">Source on Github</a></p>
+        <!-- <p class="to-github">
+            <a href="https://github.com/tomerlichtash/israeli-campaign-ribbons-css" target="_blank">Check out the
+                project on Github</a> or skip ahead to the <a href="#">ribbons.css</a> stylesheet.
+        </p> -->
+
     </header>
-    <div class="item">
-        <h2>1948</h2>
-        <div class="komemiut war">
-            <span class="a1"></span>
-            <span class="b1"></span>
-            <span class="a1"></span>
-        </div>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Independence_war_ribbon.jpg/150px-Independence_war_ribbon.jpg"
-            alt="">
-    </div>
-    <div class="item">
-        <h2>1956</h2>
-        <div class="sinai war">
-            <span class="a1"></span>
-            <span class="b1"></span>
-            <span class="a1"></span>
-        </div>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Sinai_war_ribbon.jpg/150px-Sinai_war_ribbon.jpg"
-            alt="">
-    </div>
-    <div class="item">
-        <h2>1967</h2>
-        <div class="sixday war">
-            <span class="a1"></span>
-            <span class="b1"></span>
-            <span class="a1"></span>
-        </div>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Six_day_war_ribbon.jpg/150px-Six_day_war_ribbon.jpg"
-            alt="">
-    </div>
-    <div class="item">
-        <h2>1970</h2>
-        <div class="hatasha war">
-            <span class="a1"></span>
-            <span class="b1"></span>
-            <span class="a1"></span>
-        </div>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Hatasharibon.jpg/150px-Hatasharibon.jpg"
-            alt="">
+
+    <div class="container content">
+        <!-- <div class="items"> -->
+
+        <article class="item">
+            <span class="article-content">
+                <h2>1948</h2>
+                <figure class="komemiut war">
+                    <span class="a1"></span>
+                    <span class="b1"></span>
+                    <span class="a1"></span>
+                </figure>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Independence_war_ribbon.jpg/150px-Independence_war_ribbon.jpg"
+                    alt="" />
+            </span>
+            <span class="article-source">
+                <pre>
+                            <code class="css">
+        .komemiut {
+            background: #184ea4;
+        }
+        .komemiut .a1 {
+            max-width: 7px;
+            background: #92c8e2;
+            border-right: 7px solid #f4f4f4;
+            border-left: 7px solid #f4f4f4;
+        }
+        .komemiut .b1 {
+            margin: 0 1.65rem;
+            max-width: 7px;
+            background: #ab3122;
+            position: relative;
+        }
+                            </code>
+                        </pre>
+            </span>
+        </article>
+
+        <article class="item">
+            <span class="article-content">
+                <h2>1956</h2>
+                <figure class="sinai war">
+                    <span class="a1"></span>
+                    <span class="b1"></span>
+                    <span class="a1"></span>
+                </figure>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Sinai_war_ribbon.jpg/150px-Sinai_war_ribbon.jpg"
+                    alt="" />
+                <pre>
+                        <code class="css">
+        .sinai {
+            background: #e27e33;
+        }
+        .sinai .a1 {
+            max-width: 16px;
+            background: #184ea4;
+        }
+        .sinai .b1 {
+            border-right: 8px solid #ab3122;
+            border-left: 8px solid #ab3122;
+            max-width: 24px;
+            background: #92c8e2;
+            position: relative;
+        }
+                    </code>
+                    </pre>
+            </span>
+        </article>
+
+        <article class="item">
+            <span class="article-content">
+                <h2>1967</h2>
+                <figure class="sixday war">
+                    <span class="a1"></span>
+                    <span class="b1"></span>
+                    <span class="a1"></span>
+                </figure>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Six_day_war_ribbon.jpg/150px-Six_day_war_ribbon.jpg"
+                    alt="" />
+                <pre>
+                        <code class="css">
+        .sixday {
+            background: #b00;
+        }
+        .sixday .a1 {
+            max-width: 26px;
+            background: #184ea4;
+        }
+        .sixday .b1 {
+            max-width: 12px;
+            background: #92c8e2;
+            border-right: 12px solid #f4f4f4;
+            border-left: 12px solid #f4f4f4;
+            position: relative;
+        }
+                    </code>
+                    </pre>
+            </span>
+        </article>
+
+        <article class="item">
+            <span class="article-content">
+                <h2>1970</h2>
+                <figure class="hatasha war">
+                    <span class="a1"></span>
+                    <span class="b1"></span>
+                    <span class="a1"></span>
+                </figure>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Hatasharibon.jpg/150px-Hatasharibon.jpg"
+                    alt="" />
+                <pre>
+                        <code class="css">
+        .hatasha {
+            background: #bd7755;
+        }
+        .hatasha .a1 {
+            max-width: 10px;
+            background: #92c8e2;
+            border-right: 10px solid #f4f4f4;
+            border-left: 10px solid #f4f4f4;
+        }
+        .hatasha .b1 {
+            background: #ab3122;
+            max-width: 14px;
+            margin: 0 1.05rem;
+        }
+                        </code>
+                        </pre>
+            </span>
+        </article>
+
+        <article class="item">
+            <span class="article-content">
+                <h2>1973</h2>
+                <figure class="kippur war">
+                    <span class="a1"></span>
+                    <span class="b1"></span>
+                    <span class="a1"></span>
+                </figure>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Yomkippurribon.jpg/150px-Yomkippurribon.jpg"
+                    alt="">
+                <pre>
+                        <code class="css">
+        .kippur .a1 {
+            border-right: 8px solid #f4f4f4;
+            border-left: 8px solid #f4f4f4;
+            max-width: 8px;
+        }
+        .kippur .b1 {
+            background: #ab3122;
+            max-width: 44px;
+        }
+                    </code>
+                    </pre>
+            </span>
+        </article>
+
+        <article class="item">
+            <span class="article-content">
+                <h2>1982</h2>
+                <figure class="lebanon war">
+                    <span class="a1"></span>
+                    <span class="b1"></span>
+                    <span class="a1"></span>
+                </figure>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Lebanon_war_ribbon.jpg/150px-Lebanon_war_ribbon.jpg"
+                    alt="" />
+                <pre>
+                        <code class="css">
+        .lebanon {
+            background: #ab3122;
+        }
+        .lebanon .a1 {
+            max-width: 16px;
+            background: #541a95;
+            border-right: 8px solid #f4f4f4;
+            border-left: 8px solid #f4f4f4;
+        }
+        .lebanon .b1 {
+            max-width: 8px;
+            background: #ab3122;
+            border-right: 8px solid #26972d;
+            border-left: 8px solid #26972d;
+        }
+                    </code>
+                    </pre>
+            </span>
+        </article>
+
+        <article class="item">
+            <span class="article-content">
+                <h2>2006</h2>
+                <figure class="lebanon2 war">
+                    <span class="a1"></span>
+                    <span class="b1"></span>
+                    <span class="a1"></span>
+                </figure>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Lebanon2ribon.jpg/150px-Lebanon2ribon.jpg"
+                    alt="" />
+                <pre>
+                        <code class="css">
+        .lebanon2 .a1 {
+            background: #e27e33;
+        }
+        .lebanon2 .a1::before {
+            content: '';
+            height: 50px;
+            width: 20px;
+            background: #184ea4;
+            width: 12px;
+            position: absolute;
+            border-right: 10px solid #f4f4f4;
+            border-left: 10px solid #f4f4f4;
+        }
+        .lebanon2 .a1:first-child::before {
+            left: 0;
+        }
+        .lebanon2 .a1:last-child::before {
+            right: 0;
+        }
+        .lebanon2 .b1 {
+            background: #ab3122;
+            max-width: 28px;
+            border-right: 10px solid #26972d;
+            border-left: 10px solid #26972d;
+        }
+                        </code>
+                    </pre>
+            </span>
+        </article>
     </div>
 
-    <div class="item">
-        <h2>1973</h2>
-        <div class="kippur war">
-            <span class="a1"></span>
-            <span class="b1"></span>
-            <span class="a1"></span>
+    <div class="container alt">
+
+        <div class="snippets">
+            <h2 class="container-title">How does it work?</h2>
+            <div class="snippets-grid">
+
+                <div class="snippet">
+                    <article>
+                        <h3 class="article-title">Ribbon HTML Structure</h3>
+                        <pre>
+                        <code class="html">
+    &lt;figure class="komemiut war"&gt;
+        &lt;span class="a1"&gt;&lt;/span&gt;
+        &lt;span class="b1"&gt;&lt;/span&gt;
+        &lt;span class="a1"&gt;&lt;/span&gt;
+    &lt;/figure&gt;
+                    </code>
+                    </pre>
+                    </article>
+                </div>
+                <div class="snippet">
+                    <article>
+                        <span class="article-content">
+                            <h3 class="article-title">Base Ribbon Style</h3>
+                            <pre>
+                    <code class="css">
+    .war {
+        position: relative;
+        justify-content: center;
+        display: flex;
+        z-index: 1;
+        overflow: hidden;
+        height: 38px;
+        width: 151px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, .2);
+        border-radius: 3px;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+    }
+                    </code>
+                </pre>
+                        </span>
+                    </article>
+                </div>
+            </div>
         </div>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Yomkippurribon.jpg/150px-Yomkippurribon.jpg"
-            alt="">
+        <p class="to-github">
+            <a href="https://github.com/tomerlichtash/israeli-campaign-ribbons-css" target="_blank">Check out the
+                project on Github</a> or skip ahead to the <a href="#">ribbons.css</a> stylesheet.
+        </p>
+
     </div>
 
-    <div class="item">
-        <h2>1982</h2>
-        <div class="lebanon war">
-            <span class="a1"></span>
-            <span class="b1"></span>
-            <span class="a1"></span>
-        </div>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Lebanon_war_ribbon.jpg/150px-Lebanon_war_ribbon.jpg"
-            alt="">
-    </div>
-    <div class="item">
-        <h2>2006</h2>
-        <div class="lebanon2 war">
-            <span class="a1"></span>
-            <span class="b1"></span>
-            <span class="a1"></span>
-        </div>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Lebanon2ribon.jpg/150px-Lebanon2ribon.jpg"
-            alt="">
-    </div>
     <footer class="footer">
         <ul class="iconList">
             <li class="iconContainer">
@@ -120,4 +342,5 @@
 
     gtag('config', 'UA-26201270-12');
 </script>
+
 </html>

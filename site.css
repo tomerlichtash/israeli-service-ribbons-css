@@ -1,0 +1,210 @@
+html, body {
+    font-size: 12px;
+    font-weight: 300;
+    font-family: Patua One;
+    text-align: center;
+    margin: 0;
+    color: #00A;
+}
+
+figure {
+    margin: 0 auto;
+}
+
+code {
+    font-size: 1.1rem;
+    text-align: left;
+    direction: ltr;
+}
+
+.content code {
+    opacity: 0.4;
+    height: 150px;
+}
+
+header {
+    padding: 4rem 0;
+}
+
+h1 {
+    font-family: Patua One;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 100;
+    margin: 0;
+    display: inline-block;
+}
+
+h1 span {
+    display: inline-block;
+    margin: 0 2rem;
+    letter-spacing: 0.4rem;
+    line-height: 8rem;
+    color: #00A;
+    border-top: 7px double #00A;
+    border-bottom: 7px double #00A;
+}
+
+h1::before, h1::after {
+    content: '***';
+    position: relative;
+    top: 5px;
+    letter-spacing: 2rem;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.article-title {
+    letter-spacing: 0.2rem;
+    margin: 0 auto;
+    text-align: left;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    line-height: 4rem;
+    font-family: Patua One;
+}
+
+.container-title {
+    font-size: 2.4rem;
+    letter-spacing: 0.2rem;
+    display: block;
+    margin: 0;
+    line-height: 8rem;
+    text-transform: uppercase;
+    font-family: Patua One;
+}
+
+.item {
+    display: inline-block;
+    width: 45vw;
+    margin: 1rem 1rem 0 0;
+    background: #fff;
+    transition: 125ms all ease-in-out;
+    text-align: center;
+    position: relative;
+    border-radius: 6px;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.25);
+}
+
+.item:hover {
+    opacity: 1;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.25);
+}
+
+.item:hover code {
+    opacity: 1;
+}
+
+.item:hover pre {
+    display: block;
+}
+
+.item h2 {
+    width: 100%;
+    font-weight: 900;
+    letter-spacing: 0.2rem;
+    font-size: 4rem;
+    color: #222;
+    text-align: center;
+}
+
+.item img {
+    margin: 1rem 0;
+    transition: 75ms all ease-in-out;
+    position: relative;
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+    direction: ltr;
+    padding: 2rem 0;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+}
+  
+.footer .iconList {
+    list-style: none;
+    padding: 1rem 0;
+}
+  
+.footer .iconContainer {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 0.25rem;
+}
+  
+.footer .icon {
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 21px;
+    height: 18px;
+    vertical-align: top;
+}
+  
+.footer .icon img {
+    transition: all 200ms ease-in;
+    width: 21px;
+    height: 18px;
+}
+  
+.footer .license {
+    margin: 0 0.35rem;
+}
+
+.footer  .license::before {
+    content: '(';
+}
+
+.footer .license::after {
+    content: ')';
+}
+
+.icon.facebook {
+    background-image: url(assets/facebook-f.svg);
+}
+
+.icon.instagram {
+    background-image: url(assets/instagram.svg);
+}
+
+.icon.github{
+    background-image: url(assets/github-alt.svg);
+}
+
+.icon.twitter {
+    background-image: url(assets/twitter.svg);
+}
+
+.icon.linkedin {
+    background-image: url(assets/linkedin.svg);
+}
+
+.to-github {
+    font-size: 1.4rem;
+    font-family: Patua One;
+}
+
+
+.container.alt {
+    margin: 4rem 0 0;
+    padding: 4rem 0;
+    background: #e0e5e0;
+    overflow: hidden;
+}
+.container.alt pre {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.container.alt code {
+    border-radius: 6px;
+}
+
+.snippets {
+    width: 800px;
+    margin: 0 auto;
+}
