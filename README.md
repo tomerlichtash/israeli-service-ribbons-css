@@ -41,4 +41,3 @@
 * https://www.mod.gov.il/Citizen_Service/clalim/otot/Pages/sing-war.aspx
 * https://www.mod.gov.il/English/Campaign%20Ribbons/Pages/Service-Ribbons.aspx
 * https://en.wikipedia.org/wiki/Orders,_decorations,_and_medals_of_Israel#Campaign_ribbons_and_medal
-* 
