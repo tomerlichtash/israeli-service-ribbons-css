@@ -5,25 +5,25 @@
 
 ### Ribbon HTML/CSS Structure
 ```
-    <figure class="komemiut war">
-        <span class="a1"></span>
-        <span class="b1"></span>
-        <span class="a1"></span>
-    </figure>
+<figure class="komemiut war">
+    <span class="a1"></span>
+    <span class="b1"></span>
+    <span class="a1"></span>
+</figure>
 ```
 ```
-    .war {
-        position: relative;
-        overflow: hidden;
-        display: flex;
-        justify-content: center;
-        width: 151px;
-        height: 38px;
-        box-shadow: 0 0 15px rgba(0, 0, 0, .2);
-        border: 1px solid rgba(0, 0, 0, 0.5);
-        border-radius: 3px;
-        z-index: 1;
-    }
+.war {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    width: 151px;
+    height: 38px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .2);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+    z-index: 1;
+}
 ```
 
 ### Color palette:
