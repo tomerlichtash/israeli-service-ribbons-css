@@ -1,4 +1,9 @@
 # Israeli Campaign Ribbons in Pure CSS
+
+![1948 Campaign Ribbon](https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Independence_war_ribbon.jpg/150px-Independence_war_ribbon.jpg)
+
+
+
 * Demo: https://tomerlichtash.github.io/israeli-campaign-ribbons-css/
 * CodePen: https://codepen.io/loremipsum/pen/GRgqMZw
 
