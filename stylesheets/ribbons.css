@@ -1,25 +1,26 @@
 
 .war {
-    position: relative;
-    justify-content: center;
     display: flex;
-    z-index: 1;
+    justify-content: center;
+    position: relative;
     overflow: hidden;
-    height: 38px;
-   /*37.7952755906px*/
-    width: 151px;
-   /*151.1811023622px*/
+    height: 38px; /*37.7952755906px*/
+    width: 151px; /*151.1811023622px*/
     box-shadow: 0 0 15px rgba(0, 0, 0, .2);
     border-radius: 3px;
     border: 1px solid rgba(0, 0, 0, 0.5);
+    z-index: 1;
 }
+
 .a1, .b1 {
     flex: 1;
     position: relative;
 }
+
 .komemiut {
     background: #184ea4;
 }
+
 .komemiut .a1 {
     max-width: 7px;
     background: #92c8e2;
@@ -32,6 +33,7 @@
     background: #ab3122;
     position: relative;
 }
+
 .sinai {
     background: #e27e33;
 }
@@ -61,6 +63,7 @@
     border-left: 12px solid #f4f4f4;
     position: relative;
 }
+
 .hatasha {
     background: #bd7755;
 }
@@ -75,6 +78,7 @@
     max-width: 14px;
     margin: 0 1.05rem;
 }
+
 .kippur {
     background: #4d81ba;
 }
@@ -87,6 +91,7 @@
     background: #ab3122;
     max-width: 44px;
 }
+
 .lebanon {
     background: #ab3122;
 }
@@ -102,13 +107,13 @@
     border-right: 8px solid #26972d;
     border-left: 8px solid #26972d;
 }
+
 .lebanon2 .a1 {
     background: #e27e33;
 }
 .lebanon2 .a1::before {
     content: '';
     height: 50px;
-    width: 20px;
     background: #184ea4;
     width: 12px;
     position: absolute;
