@@ -8,10 +8,11 @@ html, body {
 }
 
 a {
-    color: #404040;
+    color: #08a;
 }
+
 a:hover {
-    color: #F00;
+    color: #c0a;
 }
 
 figure {
@@ -19,7 +20,6 @@ figure {
 }
 
 code {
-    font-size: 1.1rem;
     text-align: left;
     direction: ltr;
 }
@@ -51,14 +51,6 @@ h1 span {
     border-left: none;
     border-right: none;
 }
-
-/* h1::before, h1::after {
-    content: '***';
-    position: relative;
-    display: inline-block;
-    top: 0.5rem;
-    letter-spacing: 1rem;
-} */
 
 .container {
     margin: 0 auto;
@@ -105,6 +97,7 @@ h1 span {
 .item:hover h2 {
     opacity: 1;
 }
+
 .item:hover code {
     opacity: 1;
 }
@@ -123,12 +116,10 @@ h1 span {
 }
 
 .item img {
-    /* display: none; */
     margin: 1rem 0;
     top: 1rem;
     left: 1rem;
     transition: 75ms all ease-in-out;
-    /* position: absolute; */
     width: 100px
 
 }
@@ -201,22 +192,24 @@ h1 span {
 }
 
 .to-github {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
+    line-height: 3.6rem;
     font-family: Patua One;
 }
 
-
 .container.alt {
     margin: 4rem 0 0;
-    padding: 4rem 0;
+    padding: 4rem 2rem;
     background: #e0e5e0;
     overflow: hidden;
 }
 .container.alt pre {
     margin: 0 auto;
+    max-width: 800px;
 }
 .container.alt code {
     border-radius: 6px;
+    font-size: 1vw;
 }
 
 .snippets {
@@ -224,7 +217,7 @@ h1 span {
     margin: 0 auto;
 }
 
-@media only screen and (max-width:70em) { 
+@media only screen and (max-width:70rem) { 
     .item {
         width: 100%;
     }
@@ -232,6 +225,7 @@ h1 span {
         line-height: 4rem;
         font-size: 3vw;
     }
-
-	/* CSS rules here */
+    .container.alt code {
+        font-size: 1.2rem;
+    }
 }
