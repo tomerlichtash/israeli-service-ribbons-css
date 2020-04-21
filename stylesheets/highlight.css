@@ -2,12 +2,33 @@
 Docco style used in http://jashkenas.github.com/docco/ converted by Simon Madine (@thingsinjars)
 */
 
+.hlja {
+  --color0: #fff;
+  --color1: #000;
+  --color2: #408080;
+  --color3: #954121;
+  --color4: #40a070;
+  --color5: #219161;
+  --color6: #19469d;
+  --color7: #00f;
+  --color8: #458;
+  --color9: #000080;
+  --color10: #008080;
+  --color11: #b68;
+  --color12: #990073;
+  --color13: #0086b3;
+  --color14: #999;
+
+  --codeBgColor: var(--color0);
+  --selectorColor: var(--color6);
+}
+
 .hljs {
   display: block;
   overflow-x: auto;
   padding: 0.5em;
-  color: #000;
-  background: #f8f8ff;
+  color: #c0a;
+  background: var(--codeBgColor);
 }
 
 .hljs-comment,
@@ -24,19 +45,20 @@ Docco style used in http://jashkenas.github.com/docco/ converted by Simon Madine
 }
 
 .hljs-number {
-  color: #40a070;
+  color: #806;
 }
 
 .hljs-string,
 .hljs-doctag {
-  color: #219161;
+  color: #c0a;
 }
 
 .hljs-selector-id,
 .hljs-selector-class,
 .hljs-section,
 .hljs-type {
-  color: #19469d;
+  color: #048;
+  /* font-weight: 900; */
 }
 
 .hljs-params {
@@ -51,7 +73,7 @@ Docco style used in http://jashkenas.github.com/docco/ converted by Simon Madine
 .hljs-tag,
 .hljs-name,
 .hljs-attribute {
-  color: #000080;
+  color: #2060fa;
   font-weight: normal;
 }
 
@@ -94,4 +116,8 @@ Docco style used in http://jashkenas.github.com/docco/ converted by Simon Madine
 
 .hljs-strong {
   font-weight: bold;
+}
+
+.hljs-selector-pseudo {
+  color: #808080;
 }

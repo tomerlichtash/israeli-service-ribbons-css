@@ -1,4 +1,3 @@
-
 .war {
     display: flex;
     justify-content: center;
@@ -12,22 +11,22 @@
     z-index: 1;
 }
 
-.a1, .b1 {
+.outer, .inner {
     flex: 1;
     position: relative;
 }
 
-.komemiut {
+.war_1948 {
     background: #184ea4;
 }
 
-.komemiut .a1 {
+.war_1948 .outer {
     max-width: 7px;
     background: #92c8e2;
     border-right: 7px solid #f4f4f4;
     border-left: 7px solid #f4f4f4;
 }
-.komemiut .b1 {
+.war_1948 .inner {
     margin: 0 1.65rem;
     max-width: 7px;
     background: #ab3122;
@@ -37,11 +36,11 @@
 .sinai {
     background: #e27e33;
 }
-.sinai .a1 {
+.sinai .outer {
     max-width: 16px;
     background: #184ea4;
 }
-.sinai .b1 {
+.sinai .inner {
     border-right: 8px solid #ab3122;
     border-left: 8px solid #ab3122;
     max-width: 24px;
@@ -52,11 +51,11 @@
 .sixday {
     background: #b00;
 }
-.sixday .a1 {
+.sixday .outer {
     max-width: 26px;
     background: #184ea4;
 }
-.sixday .b1 {
+.sixday .inner {
     max-width: 12px;
     background: #92c8e2;
     border-right: 12px solid #f4f4f4;
@@ -67,13 +66,13 @@
 .hatasha {
     background: #bd7755;
 }
-.hatasha .a1 {
+.hatasha .outer {
     max-width: 10px;
     background: #92c8e2;
     border-right: 10px solid #f4f4f4;
     border-left: 10px solid #f4f4f4;
 }
-.hatasha .b1 {
+.hatasha .inner {
     background: #ab3122;
     max-width: 14px;
     margin: 0 1.05rem;
@@ -82,12 +81,12 @@
 .kippur {
     background: #4d81ba;
 }
-.kippur .a1 {
+.kippur .outer {
     border-right: 8px solid #f4f4f4;
     border-left: 8px solid #f4f4f4;
     max-width: 8px;
 }
-.kippur .b1 {
+.kippur .inner {
     background: #ab3122;
     max-width: 44px;
 }
@@ -95,23 +94,23 @@
 .lebanon {
     background: #ab3122;
 }
-.lebanon .a1 {
+.lebanon .outer {
     max-width: 16px;
     background: #541a95;
     border-right: 8px solid #f4f4f4;
     border-left: 8px solid #f4f4f4;
 }
-.lebanon .b1 {
+.lebanon .inner {
     max-width: 8px;
     background: #ab3122;
     border-right: 8px solid #26972d;
     border-left: 8px solid #26972d;
 }
 
-.lebanon2 .a1 {
+.lebanon2 .outer {
     background: #e27e33;
 }
-.lebanon2 .a1::before {
+.lebanon2 .outer::before {
     content: '';
     height: 50px;
     background: #184ea4;
@@ -120,15 +119,51 @@
     border-right: 10px solid #f4f4f4;
     border-left: 10px solid #f4f4f4;
 }
-.lebanon2 .a1:first-child::before {
+.lebanon2 .outer:first-child::before {
     left: 0;
 }
-.lebanon2 .a1:last-child::before {
+.lebanon2 .outer:last-child::before {
     right: 0;
 }
-.lebanon2 .b1 {
+.lebanon2 .inner {
     background: #ab3122;
     max-width: 28px;
     border-right: 10px solid #26972d;
     border-left: 10px solid #26972d;
+}
+
+.example-ribbon {
+    background: #c0a;
+    transition: 125ms all ease-in-out;;
+}
+.example-ribbon .outer {
+    border-right: 12px double #fa9;
+    border-left: 8px double rgba(100, 150, 200, 0.9);
+    max-width: 8px;
+}
+.example-ribbon .inner {
+    background: #349;
+    max-width: 44px;
+}
+
+/* .example-ribbon {
+    background: #c0c0c0;
+}
+.example-ribbon .outer {
+    border-right: 24px groove rgba(255, 255, 255, 0.8);
+    border-left: 12px ridge rgba(255, 255, 255, 0.8);
+    max-width: 8px;
+}
+.example-ribbon .inner {
+    background: #808080;
+    max-width: 44px;
+} */
+
+.back-to-top {
+    margin: 2rem 0 0;
+}
+
+.disclaimer {
+    margin: 4rem 0;
+    font-style: italic;
 }

@@ -1,276 +1,337 @@
+<!-- To Zimmerman ~ https://www.izkor.gov.il/%D7%90%D7%99%D7%99%D7%9C%20%D7%A6%D7%99%D7%9E%D7%A8%D7%9E%D7%9F/en_2874b010be947b8686a3d246c5a6d6cb -->
 <!doctype html>
 <html lang="en">
 
 <head>
-    <title>Israeli Campaing Ribbons in CSS</title>
-    <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+    <title>Campaing Ribbons in CSS</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link href="https://fonts.googleapis.com/css2?family=Glegoo:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./stylesheets/site.css">
     <link rel="stylesheet" href="./stylesheets/ribbons.css">
-    <link rel="stylesheet" href="./stylesheets/docco.css">
+    <link rel="stylesheet" href="./stylesheets/highlight.css">
+    <link rel="stylesheet" href="./stylesheets/media.css">
 </head>
 
 <body>
-    <header>
-        <h1><span>Israeli Campaign Ribbons in CSS</span></h1>
-        <!-- <p class="to-github">
-            <a href="https://github.com/tomerlichtash/israeli-campaign-ribbons-css" target="_blank">Check out the
-                project on Github</a> or skip ahead to the <a href="#">ribbons.css</a> stylesheet.
-        </p> -->
-
+    <a name="top"></a>
+    <header class="container">
+        <h1 class="site-title">
+            <a href="/" class="site-title-link">
+                <span class="text">Service Ribbons in Pure CSS</span>
+            </a>
+        </h1>
+        <div class="container-inner">
+            <p class="intro abstract">"Service Ribbons" commemorate a person's participation in war, campaign and
+                combat up to the establishment of the State of Israel. While ribbons are made of cloth on steel, this
+                project draws them in HTML &amp; CSS. How?
+                <a href="/#how" aria-label="Read more" title="How does it work? Read more">
+                    Learn how ribbons are made
+                </a>
+            </p>
+            <!-- <p>Want to make your own ribbons? 
+            </p> -->
+        </div>
     </header>
-
-    <div class="container content">
-        <!-- <div class="items"> -->
-
+    <div class="content container">
         <article class="item">
-            <div class="article-content">
-                <h2 class="label">1948</h2>
-                <figure class="komemiut war">
-                    <span class="a1"></span>
-                    <span class="b1"></span>
-                    <span class="a1"></span>
-                </figure>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Independence_war_ribbon.jpg/150px-Independence_war_ribbon.jpg"
-                    alt="" />
+            <div class="item-inner">
+                <div class="item-meta">
+                    <h2 class="item-label" aria-label="1948">1948</h2>
+                    <figure class="war_1948 war">
+                        <span class="outer"></span>
+                        <span class="inner"></span>
+                        <span class="outer"></span>
+                    </figure>
+                </div>
+                <a target="_blank" title="Read about 1948 in Wikipedia"
+                    href="https://en.wikipedia.org/wiki/1948_Arab%E2%80%93Israeli_War">
+                    <img src="assets/images/1948.jpg" alt="1948" />
+                </a>
             </div>
-            <div class="article-source">
-                <pre>
-                            <code class="css">
-        .komemiut {
-            background: #184ea4;
-        }
-        .komemiut .a1 {
-            max-width: 7px;
-            background: #92c8e2;
-            border-right: 7px solid #f4f4f4;
-            border-left: 7px solid #f4f4f4;
-        }
-        .komemiut .b1 {
-            margin: 0 1.65rem;
-            max-width: 7px;
-            background: #ab3122;
-            position: relative;
-        }
-                            </code>
-                        </pre>
-            </div>
-        </article>
-
-        <article class="item">
-            <div class="article-content">
-                <h2 class="label">1956</h2>
-                <figure class="sinai war">
-                    <span class="a1"></span>
-                    <span class="b1"></span>
-                    <span class="a1"></span>
-                </figure>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Sinai_war_ribbon.jpg/150px-Sinai_war_ribbon.jpg"
-                    alt="" />
-                <pre>
-                        <code class="css">
-        .sinai {
-            background: #e27e33;
-        }
-        .sinai .a1 {
-            max-width: 16px;
-            background: #184ea4;
-        }
-        .sinai .b1 {
-            border-right: 8px solid #ab3122;
-            border-left: 8px solid #ab3122;
-            max-width: 24px;
-            background: #92c8e2;
-            position: relative;
-        }
-                    </code>
-                    </pre>
+            <div class="item-source">
+                <pre><code class="css">
+    .war_1948 {
+        background: #184ea4;
+    }
+    .war_1948 .outer {
+        max-width: 7px;
+        background: #92c8e2;
+        border-right: 7px solid #f4f4f4;
+        border-left: 7px solid #f4f4f4;
+    }
+    .war_1948 .inner {
+        margin: 0 1.65rem;
+        max-width: 7px;
+        background: #ab3122;
+        position: relative;
+    }
+                </code></pre>
             </div>
         </article>
-
         <article class="item">
-            <div class="article-content">
-                <h2 class="label">1967</h2>
-                <figure class="sixday war">
-                    <span class="a1"></span>
-                    <span class="b1"></span>
-                    <span class="a1"></span>
-                </figure>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Six_day_war_ribbon.jpg/150px-Six_day_war_ribbon.jpg"
-                    alt="" />
-                <pre>
-                        <code class="css">
-        .sixday {
-            background: #b00;
-        }
-        .sixday .a1 {
-            max-width: 26px;
-            background: #184ea4;
-        }
-        .sixday .b1 {
-            max-width: 12px;
-            background: #92c8e2;
-            border-right: 12px solid #f4f4f4;
-            border-left: 12px solid #f4f4f4;
-            position: relative;
-        }
-                    </code>
-                    </pre>
+            <div class="item-inner">
+                <div class="item-meta">
+                    <h2 class="item-label" aria-label="1956">1956</h2>
+                    <figure class="sinai war">
+                        <span class="outer"></span>
+                        <span class="inner"></span>
+                        <span class="outer"></span>
+                    </figure>
+                </div>
+                <a target="_blank" title="Read about 1948 in Wikipedia"
+                    href="https://en.wikipedia.org/wiki/Suez_Crisis">
+                    <img src="assets/images/1956.jpg" alt="1956" />
+                </a>
+                <div class="item-source">
+                    <pre><code class="css">
+    .sinai {
+        background: #e27e33;
+    }
+    .sinai .outer {
+        max-width: 16px;
+        background: #184ea4;
+    }
+    .sinai .inner {
+        border-right: 8px solid #ab3122;
+        border-left: 8px solid #ab3122;
+        max-width: 24px;
+        background: #92c8e2;
+        position: relative;
+    }
+                    </code></pre>
+                </div>
             </div>
         </article>
-
         <article class="item">
-            <div class="article-content">
-                <h2 class="label">1970</h2>
-                <figure class="hatasha war">
-                    <span class="a1"></span>
-                    <span class="b1"></span>
-                    <span class="a1"></span>
-                </figure>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Hatasharibon.jpg/150px-Hatasharibon.jpg"
-                    alt="" />
-                <pre>
-                        <code class="css">
-        .hatasha {
-            background: #bd7755;
-        }
-        .hatasha .a1 {
-            max-width: 10px;
-            background: #92c8e2;
-            border-right: 10px solid #f4f4f4;
-            border-left: 10px solid #f4f4f4;
-        }
-        .hatasha .b1 {
-            background: #ab3122;
-            max-width: 14px;
-            margin: 0 1.05rem;
-        }
-                        </code>
-                        </pre>
+            <div class="item-inner">
+                <div class="item-meta">
+                    <h2 class="item-label" aria-label="1967">1967</h2>
+                    <figure class="sixday war">
+                        <span class="outer"></span>
+                        <span class="inner"></span>
+                        <span class="outer"></span>
+                    </figure>
+                </div>
+                <a target="_blank" title="Read about 1967 in Wikipedia"
+                    href="https://en.wikipedia.org/wiki/Six-Day_War">
+                    <img src="assets/images/1967.jpg" alt="1967" />
+                </a>
+                <div class="item-source">
+                    <pre><code class="css">
+    .sixday {
+        background: #b00;
+    }
+    .sixday .outer {
+        max-width: 26px;
+        background: #184ea4;
+    }
+    .sixday .inner {
+        max-width: 12px;
+        background: #92c8e2;
+        border-right: 12px solid #f4f4f4;
+        border-left: 12px solid #f4f4f4;
+        position: relative;
+    }
+                    </code></pre>
+                </div>
             </div>
         </article>
-
         <article class="item">
-            <div class="article-content">
-                <h2 class="label">1973</h2>
-                <figure class="kippur war">
-                    <span class="a1"></span>
-                    <span class="b1"></span>
-                    <span class="a1"></span>
-                </figure>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Yomkippurribon.jpg/150px-Yomkippurribon.jpg"
-                    alt="">
-                <pre>
-                        <code class="css">
-        .kippur .a1 {
-            border-right: 8px solid #f4f4f4;
-            border-left: 8px solid #f4f4f4;
-            max-width: 8px;
-        }
-        .kippur .b1 {
-            background: #ab3122;
-            max-width: 44px;
-        }
-                    </code>
-                    </pre>
+            <div class="item-inner">
+                <div class="item-meta">
+                    <h2 class="item-label" aria-label="1970">1970</h2>
+                    <figure class="hatasha war">
+                        <span class="outer"></span>
+                        <span class="inner"></span>
+                        <span class="outer"></span>
+                    </figure>
+                </div>
+                <a target="_blank" title="Read about 1970 in Wikipedia"
+                    href="https://en.wikipedia.org/wiki/War_of_Attrition">
+                    <img src="assets/images/1970.jpg" alt="1970" />
+                </a>
+                <div class="item-source">
+                    <pre><code class="css">
+    .hatasha {
+        background: #bd7755;
+    }
+    .hatasha .outer {
+        max-width: 10px;
+        background: #92c8e2;
+        border-right: 10px solid #f4f4f4;
+        border-left: 10px solid #f4f4f4;
+    }
+    .hatasha .inner {
+        background: #ab3122;
+        max-width: 14px;
+        margin: 0 1.05rem;
+    }
+                    </code></pre>
+                </div>
             </div>
         </article>
-
         <article class="item">
-            <div class="article-content">
-                <h2 class="label">1982</h2>
-                <figure class="lebanon war">
-                    <span class="a1"></span>
-                    <span class="b1"></span>
-                    <span class="a1"></span>
-                </figure>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Lebanon_war_ribbon.jpg/150px-Lebanon_war_ribbon.jpg"
-                    alt="" />
-                <pre>
-                        <code class="css">
-        .lebanon {
-            background: #ab3122;
-        }
-        .lebanon .a1 {
-            max-width: 16px;
-            background: #541a95;
-            border-right: 8px solid #f4f4f4;
-            border-left: 8px solid #f4f4f4;
-        }
-        .lebanon .b1 {
-            max-width: 8px;
-            background: #ab3122;
-            border-right: 8px solid #26972d;
-            border-left: 8px solid #26972d;
-        }
-                    </code>
-                    </pre>
+            <div class="item-inner">
+                <div class="item-meta">
+                    <h2 class="item-label" aria-label="1973">1973</h2>
+                    <figure class="kippur war">
+                        <span class="outer"></span>
+                        <span class="inner"></span>
+                        <span class="outer"></span>
+                    </figure>
+                </div>
+                <a target="_blank" title="Read about 1967 in Wikipedia"
+                    href="https://en.wikipedia.org/wiki/Yom_Kippur_War">
+                    <img src="assets/images/1973.jpg" alt="1973" />
+                </a>
+                <div class="item-source">
+                    <pre><code class="css">
+    .kippur .outer {
+        border-right: 8px solid #f4f4f4;
+        border-left: 8px solid #f4f4f4;
+        max-width: 8px;
+    }
+    .kippur .inner {
+        background: #ab3122;
+        max-width: 44px;
+    }
+                    </code></pre>
+                </div>
             </div>
         </article>
-
         <article class="item">
-            <div class="article-content">
-                <h2 class="label">2006</h2>
-                <figure class="lebanon2 war">
-                    <span class="a1"></span>
-                    <span class="b1"></span>
-                    <span class="a1"></span>
-                </figure>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Lebanon2ribon.jpg/150px-Lebanon2ribon.jpg"
-                    alt="" />
-                <pre>
-                        <code class="css">
-        .lebanon2 .a1 {
-            background: #e27e33;
-        }
-        .lebanon2 .a1::before {
-            content: '';
-            height: 50px;
-            width: 20px;
-            background: #184ea4;
-            width: 12px;
-            position: absolute;
-            border-right: 10px solid #f4f4f4;
-            border-left: 10px solid #f4f4f4;
-        }
-        .lebanon2 .a1:first-child::before {
-            left: 0;
-        }
-        .lebanon2 .a1:last-child::before {
-            right: 0;
-        }
-        .lebanon2 .b1 {
-            background: #ab3122;
-            max-width: 28px;
-            border-right: 10px solid #26972d;
-            border-left: 10px solid #26972d;
-        }
-                        </code>
-                    </pre>
+            <div class="item-inner">
+                <div class="item-meta">
+                    <h2 class="item-label" aria-label="1982">1982</h2>
+                    <figure class="lebanon war">
+                        <span class="outer"></span>
+                        <span class="inner"></span>
+                        <span class="outer"></span>
+                    </figure>
+                </div>
+                <a target="_blank" title="Read about 1982 in Wikipedia"
+                    href="https://en.wikipedia.org/wiki/1982_Lebanon_War">
+                    <img src="assets/images/1982.jpg" alt="1982" />
+                </a>
+                <div class="item-source">
+                    <pre><code class="css">
+    .lebanon {
+        background: #ab3122;
+    }
+    .lebanon .outer {
+        max-width: 16px;
+        background: #541a95;
+        border-right: 8px solid #f4f4f4;
+        border-left: 8px solid #f4f4f4;
+    }
+    .lebanon .inner {
+        max-width: 8px;
+        background: #ab3122;
+        border-right: 8px solid #26972d;
+        border-left: 8px solid #26972d;
+    }
+                    </code></pre>
+                </div>
+            </div>
+        </article>
+        <article class="item">
+            <div class="item-inner">
+                <div class="item-meta">
+                    <h2 class="item-label" aria-label="2006">2006</h2>
+                    <figure class="lebanon2 war">
+                        <span class="outer"></span>
+                        <span class="inner"></span>
+                        <span class="outer"></span>
+                    </figure>
+                </div>
+                <a target="_blank" title="Read about 2006 in Wikipedia"
+                    href="https://en.wikipedia.org/wiki/2006_Lebanon_War">
+                    <img src="assets/images/2006.jpg" alt="2006" />
+                </a>
+                <div class="item-source">
+                    <pre><code class="css">
+    .lebanon2 .outer {
+        background: #e27e33;
+    }
+    .lebanon2 .outer::before {
+        content: '';
+        height: 50px;
+        width: 20px;
+        background: #184ea4;
+        width: 12px;
+        position: absolute;
+        border-right: 10px solid #f4f4f4;
+        border-left: 10px solid #f4f4f4;
+    }
+    .lebanon2 .outer:first-child::before {
+        left: 0;
+    }
+    .lebanon2 .outer:last-child::before {
+        right: 0;
+    }
+    .lebanon2 .inner {
+        background: #ab3122;
+        max-width: 28px;
+        border-right: 10px solid #26972d;
+        border-left: 10px solid #26972d;
+    }
+                    </code></pre>
+                </div>
             </div>
         </article>
     </div>
+    <div class="container info">
+        <a name="how"></a>
+        <div class="container-inner">
+            <div class="inner">
+                <div class="article-header">
+                    <h2 class="container-title">How to Make a CSS Ribbon</h2>
+                    <!-- <p>Pure CSS service ribbons</p> -->
+                    <div class="sample">
+                        <figure class="war example-ribbon">
+                            <span class="outer"></span>
+                            <span class="inner"></span>
+                            <span class="outer"></span>
+                        </figure>
+                    </div>
+                    <p class="abstract even">Ribbons are implemented using the parts of CSS with a "symmetrical
+                        nature" (e.g. flex, border, rgba); manipulating these on a flexible surface makes nice drawing board for stripe based patterns.</p>
+                </div>
+                <article>
+                    <h3 class="article-title">Create a ribbon structure</h3>
+                    <pre><code class="html">
+    &lt;!-- a ribbon is a `figure` element, nesting 3 `span` elements --&gt;
 
-    <div class="container alt">
-        <h2 class="container-title">How does it work?</h2>
-        <div class="snippets-grid">
-
-            <article>
-                <h3 class="article-title">Ribbon HTML Structure</h3>
-                <pre>
-                        <code class="html">
-    &lt;figure class="komemiut war"&gt;
-        &lt;span class="a1"&gt;&lt;/span&gt;
-        &lt;span class="b1"&gt;&lt;/span&gt;
-        &lt;span class="a1"&gt;&lt;/span&gt;
+    &lt;figure class="war some-war"&gt;
+        &lt;span class="outer"&gt;&lt;/span&gt;
+        &lt;span class="inner"&gt;&lt;/span&gt;
+        &lt;span class="outer"&gt;&lt;/span&gt;
     &lt;/figure&gt;
-                    </code>
-                    </pre>
-            </article>
-            <article>
-                <div class="article-content">
-                    <h3 class="article-title">Base Ribbon Style</h3>
-                    <pre>
-                    <code class="css">
+                    </code></pre>
+                </article>
+                <article>
+                    <div class="article-content">
+                        <h3 class="article-title">Add a common layout</h3>
+                        <pre><code class="css">
+    /*  common layout (in this case the class `.war`)
+        uses flex for symmetry purposes */
+
     .war {
         position: relative;
         overflow: hidden;
@@ -283,45 +344,94 @@
         border-radius: 3px;
         z-index: 1;
     }
-                    </code>
-                </pre>
-                </div>
-            </article>
-        </div>
-        <p class="to-github">
-            <a href="https://github.com/tomerlichtash/israeli-campaign-ribbons-css" target="_blank">Check out the
-                project on Github</a> or skip ahead to the <a href="https://github.com/tomerlichtash/israeli-campaign-ribbons-css/blob/master/stylesheets/ribbons.css" target="_blank">ribbons.css</a> stylesheet.
-        </p>
+                    </code></pre>
+                    </div>
+                </article>
+                <article>
+                    <div class="article-content">
+                        <h3 class="article-title">Each ribbon is a overrides the ribbon layout and its inner parts</h3>
+                        <pre><code class="css">
+    /*  ribbon variant */
 
+    .some-war {
+        background: #c0a;
+    }
+    .some-war .outer {
+        border-right: 12px double #fa9;
+        border-left: 8px double rgba(100, 150, 200, 0.9);
+        max-width: 8px;
+    }
+    .some-war .inner {
+        background: #349;
+        max-width: 44px;
+    }
+                        </code></pre>
+                    </div>
+                </article>
+            </div>
+        </div>
     </div>
 
-    <footer class="footer">
-        <ul class="iconList">
-            <li class="iconContainer">
-                <a title="Facebook" target="_blank" href="https://facebook.com/tomerlichtash" class="icon facebook"></a>
-            </li>
-            <li class="iconContainer">
-                <a title="Twitter" target="_blank" href="https://twitter.com/tomerlichtash" class="icon twitter"></a>
-            </li>
-            <li class="iconContainer">
-                <a title="Instagram" target="_blank" href="https://instagram.com/tomerlichtash"
-                    class="icon instagram"></a>
-            </li>
-            <li class="iconContainer">
-                <a title="LinkedIn" target="_blank" href="https://il.linkedin.com/in/tomerlichtash"
-                    class="icon linkedin"></a>
-            </li>
-            <li class="iconContainer">
-                <a title="Github" target="_blank" href="https://github.com/tomerlichtash" class="icon github"></a>
-            </li>
-        </ul>
-        <p>
-            <span class="">2020</span>&nbsp;<span class="" title="2019 (CC-BY-NC-SA) Tomer Lichtash">(<a
-                    href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"
-                    title="Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)">CC</a>)</span>&nbsp;<span><a
-                    href="https://tomerlichtash.com">Tomer Lichtash</a></span>
-        </p>
+    <p class="back-to-top"><a href="#top">Back to top</a></p>
+
+    <footer class="footer-area">
+        <div class="container meta">
+            <div class="container-inner">
+                <p>
+                    Check out the <a href="https://github.com/tomerlichtash/israeli-campaign-ribbons-css"
+                        target="_blank">Github project page</a>, explore the <a
+                        href="https://github.com/tomerlichtash/israeli-campaign-ribbons-css/blob/master/stylesheets/ribbons.css"
+                        target="_blank">ribbons.css</a> file or tinker <a
+                        href="https://codepen.io/loremipsum/pen/GRgqMZw" target="blank">this code pen</a>.
+                </p>
+                <p>
+                    This work is based on the visual information provided by the <a
+                        href="https://www.mod.gov.il/English/Campaign%20Ribbons/Pages/Service-Ribbons.aspx"
+                        target="_blank">MoD</a> website.
+                </p>
+            </div>
+        </div>
+        <div class="container footer">
+            <div class="container-inner">
+                <ul class="iconList">
+                    <li class="iconContainer">
+                        <a title="Facebook" target="_blank" href="https://facebook.com/tomerlichtash"
+                            class="icon facebook"></a>
+                    </li>
+                    <li class="iconContainer">
+                        <a title="Twitter" target="_blank" href="https://twitter.com/tomerlichtash"
+                            class="icon twitter"></a>
+                    </li>
+                    <li class="iconContainer">
+                        <a title="Instagram" target="_blank" href="https://instagram.com/tomerlichtash"
+                            class="icon instagram"></a>
+                    </li>
+                    <li class="iconContainer">
+                        <a title="LinkedIn" target="_blank" href="https://il.linkedin.com/in/tomerlichtash"
+                            class="icon linkedin"></a>
+                    </li>
+                    <li class="iconContainer">
+                        <a title="Github" target="_blank" href="https://github.com/tomerlichtash"
+                            class="icon github"></a>
+                    </li>
+                </ul>
+                <p>
+                    <span class="footer-credit-label">2020</span>&nbsp;<span class=""
+                        title="2019 (CC-BY-NC-SA) Tomer Lichtash">(<a
+                            href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"
+                            title="Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)">CC</a>)</span>&nbsp;<span><a
+                            href="https://tomerlichtash.com">Tomer Lichtash</a>
+                    </span>
+                </p>
+                <p class="disclaimer">This work is an independent development, and is not affiliated with any
+                    organization, goverment or other group as such.</p>
+            </div>
+        </div>
     </footer>
+    <p class="switch-lang">
+        <span class="current-lang" title="Current page language">EN</span> &bull; <a title="Switch to Hebrew"
+            class="switch-lang-he" title="Switch to Hebrew" href="/he">HE</a>
+    </p>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-26201270-12"></script>
     <script src="./lib/highlight.pack.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
@@ -332,7 +442,6 @@
 
         gtag('config', 'UA-26201270-12');
     </script>
-
 </body>
 
 </html>
