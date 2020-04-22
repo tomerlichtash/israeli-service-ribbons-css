@@ -145,25 +145,3 @@
     background: #349;
     max-width: 44px;
 }
-
-/* .example-ribbon {
-    background: #c0c0c0;
-}
-.example-ribbon .outer {
-    border-right: 24px groove rgba(255, 255, 255, 0.8);
-    border-left: 12px ridge rgba(255, 255, 255, 0.8);
-    max-width: 8px;
-}
-.example-ribbon .inner {
-    background: #808080;
-    max-width: 44px;
-} */
-
-.back-to-top {
-    margin: 2rem 0 0;
-}
-
-.disclaimer {
-    margin: 4rem 0;
-    font-style: italic;
-}

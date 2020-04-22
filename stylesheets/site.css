@@ -340,11 +340,17 @@ header .intro {
     font-family: "Arial";
 }
 
-.disclaimer {
-    padding: 0 2rem;
-    line-height: 1.4rem;
-}
-
 .sample {
     margin: 2rem 0;
+}
+
+.back-to-top {
+    margin: 2rem 0 0;
+}
+
+.disclaimer {
+    padding: 0 2rem;
+    margin: 4rem 0;
+    line-height: 1.4rem;
+    font-style: italic;
 }
