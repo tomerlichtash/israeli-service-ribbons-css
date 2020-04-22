@@ -33,14 +33,14 @@
     position: relative;
 }
 
-.sinai {
+.war_1956 {
     background: #e27e33;
 }
-.sinai .outer {
+.war_1956 .outer {
     max-width: 16px;
     background: #184ea4;
 }
-.sinai .inner {
+.war_1956 .inner {
     border-right: 8px solid #ab3122;
     border-left: 8px solid #ab3122;
     max-width: 24px;
@@ -48,14 +48,14 @@
     position: relative;
 }
 
-.sixday {
+.war_1967 {
     background: #b00;
 }
-.sixday .outer {
+.war_1967 .outer {
     max-width: 26px;
     background: #184ea4;
 }
-.sixday .inner {
+.war_1967 .inner {
     max-width: 12px;
     background: #92c8e2;
     border-right: 12px solid #f4f4f4;
@@ -63,54 +63,54 @@
     position: relative;
 }
 
-.hatasha {
+.war_1970 {
     background: #bd7755;
 }
-.hatasha .outer {
+.war_1970 .outer {
     max-width: 10px;
     background: #92c8e2;
     border-right: 10px solid #f4f4f4;
     border-left: 10px solid #f4f4f4;
 }
-.hatasha .inner {
+.war_1970 .inner {
     background: #ab3122;
     max-width: 14px;
     margin: 0 1.05rem;
 }
 
-.kippur {
+.war_1973 {
     background: #4d81ba;
 }
-.kippur .outer {
+.war_1973 .outer {
     border-right: 8px solid #f4f4f4;
     border-left: 8px solid #f4f4f4;
     max-width: 8px;
 }
-.kippur .inner {
+.war_1973 .inner {
     background: #ab3122;
     max-width: 44px;
 }
 
-.lebanon {
+.war_1982 {
     background: #ab3122;
 }
-.lebanon .outer {
+.war_1982 .outer {
     max-width: 16px;
     background: #541a95;
     border-right: 8px solid #f4f4f4;
     border-left: 8px solid #f4f4f4;
 }
-.lebanon .inner {
+.war_1982 .inner {
     max-width: 8px;
     background: #ab3122;
     border-right: 8px solid #26972d;
     border-left: 8px solid #26972d;
 }
 
-.lebanon2 .outer {
+.war_2006 .outer {
     background: #e27e33;
 }
-.lebanon2 .outer::before {
+.war_2006 .outer::before {
     content: '';
     height: 50px;
     background: #184ea4;
@@ -119,13 +119,13 @@
     border-right: 10px solid #f4f4f4;
     border-left: 10px solid #f4f4f4;
 }
-.lebanon2 .outer:first-child::before {
+.war_2006 .outer:first-child::before {
     left: 0;
 }
-.lebanon2 .outer:last-child::before {
+.war_2006 .outer:last-child::before {
     right: 0;
 }
-.lebanon2 .inner {
+.war_2006 .inner {
     background: #ab3122;
     max-width: 28px;
     border-right: 10px solid #26972d;

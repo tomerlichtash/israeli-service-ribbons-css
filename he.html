@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Campaing Ribbons in CSS</title>
+    <title>אותות מערכה ב-CSS</title>
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
@@ -21,34 +21,32 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <link href="https://fonts.googleapis.com/css2?family=Glegoo:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./stylesheets/site.css">
+    <link rel="stylesheet" href="./stylesheets/he.css">
     <link rel="stylesheet" href="./stylesheets/ribbons.css">
     <link rel="stylesheet" href="./stylesheets/highlight.css">
     <link rel="stylesheet" href="./stylesheets/media.css">
 </head>
 
-<body>
+<body class="he" dir="rtl">
     <a name="top"></a>
     <header class="container">
         <h1 class="site-title">
-            <a href="/" class="site-title-link">
-                <span class="text">Service Ribbons in Pure CSS</span>
+            <a href="/he" class="site-title-link">
+                <span class="text">אותות מערכה ב-CSS</span>
             </a>
         </h1>
         <div class="container-inner">
-            <p class="intro abstract">"Service Ribbons" commemorate a person's participation in war, campaign and
-                combat up to the establishment of the State of Israel. While ribbons are made of cloth on steel, this
-                project draws them in HTML &amp; CSS. How?
-                <a href="/#how" aria-label="Read more" title="How does it work? Read more">
-                    Learn how ribbons are made
-                </a>
+            <p class="intro abstract">​​"אותות מערכה" הם אותות לציון השתתפותו של אדם במלחמה, במערכה ובקרב שהתרחשו מאז
+                קום המדינה ועד היום. שעה שאותות אלה אלה עשויים מתכת ובד, כעת ניתן לייצרם בדפדפן עם קצת HTML ו-CSS.
+                <a href="/he#how" aria-label="Read more" title="How does it work? Read more">למידע נוסף</a> &raquo;
             </p>
             <!-- <p>Want to make your own ribbons? 
             </p> -->
         </div>
     </header>
-    <div class="content container">
+    <div class="content container" dir="ltr">
         <article class="item">
             <div class="item-inner">
                 <div class="item-meta">
@@ -88,7 +86,7 @@
             <div class="item-inner">
                 <div class="item-meta">
                     <h2 class="item-label" aria-label="1956">1956</h2>
-                    <figure class="sinai war">
+                    <figure class="war_1956 war">
                         <span class="outer"></span>
                         <span class="inner"></span>
                         <span class="outer"></span>
@@ -100,14 +98,14 @@
                 </a>
                 <div class="item-source">
                     <pre><code class="css">
-    .sinai {
+    .war_1956 {
         background: #e27e33;
     }
-    .sinai .outer {
+    .war_1956 .outer {
         max-width: 16px;
         background: #184ea4;
     }
-    .sinai .inner {
+    .war_1956 .inner {
         border-right: 8px solid #ab3122;
         border-left: 8px solid #ab3122;
         max-width: 24px;
@@ -122,7 +120,7 @@
             <div class="item-inner">
                 <div class="item-meta">
                     <h2 class="item-label" aria-label="1967">1967</h2>
-                    <figure class="sixday war">
+                    <figure class="war_1967 war">
                         <span class="outer"></span>
                         <span class="inner"></span>
                         <span class="outer"></span>
@@ -134,14 +132,14 @@
                 </a>
                 <div class="item-source">
                     <pre><code class="css">
-    .sixday {
+    .war_1967 {
         background: #b00;
     }
-    .sixday .outer {
+    .war_1967 .outer {
         max-width: 26px;
         background: #184ea4;
     }
-    .sixday .inner {
+    .war_1967 .inner {
         max-width: 12px;
         background: #92c8e2;
         border-right: 12px solid #f4f4f4;
@@ -156,7 +154,7 @@
             <div class="item-inner">
                 <div class="item-meta">
                     <h2 class="item-label" aria-label="1970">1970</h2>
-                    <figure class="hatasha war">
+                    <figure class="war_1970 war">
                         <span class="outer"></span>
                         <span class="inner"></span>
                         <span class="outer"></span>
@@ -168,16 +166,16 @@
                 </a>
                 <div class="item-source">
                     <pre><code class="css">
-    .hatasha {
+    .war_1970 {
         background: #bd7755;
     }
-    .hatasha .outer {
+    .war_1970 .outer {
         max-width: 10px;
         background: #92c8e2;
         border-right: 10px solid #f4f4f4;
         border-left: 10px solid #f4f4f4;
     }
-    .hatasha .inner {
+    .war_1970 .inner {
         background: #ab3122;
         max-width: 14px;
         margin: 0 1.05rem;
@@ -190,24 +188,24 @@
             <div class="item-inner">
                 <div class="item-meta">
                     <h2 class="item-label" aria-label="1973">1973</h2>
-                    <figure class="kippur war">
+                    <figure class="war_1973 war">
                         <span class="outer"></span>
                         <span class="inner"></span>
                         <span class="outer"></span>
                     </figure>
                 </div>
                 <a target="_blank" title="Read about 1967 in Wikipedia"
-                    href="https://en.wikipedia.org/wiki/Yom_Kippur_War">
+                    href="https://en.wikipedia.org/wiki/Yom_war_1973_War">
                     <img src="assets/images/1973.jpg" alt="1973" />
                 </a>
                 <div class="item-source">
                     <pre><code class="css">
-    .kippur .outer {
+    .war_1973 .outer {
         border-right: 8px solid #f4f4f4;
         border-left: 8px solid #f4f4f4;
         max-width: 8px;
     }
-    .kippur .inner {
+    .war_1973 .inner {
         background: #ab3122;
         max-width: 44px;
     }
@@ -219,7 +217,7 @@
             <div class="item-inner">
                 <div class="item-meta">
                     <h2 class="item-label" aria-label="1982">1982</h2>
-                    <figure class="lebanon war">
+                    <figure class="war_1982 war">
                         <span class="outer"></span>
                         <span class="inner"></span>
                         <span class="outer"></span>
@@ -231,16 +229,16 @@
                 </a>
                 <div class="item-source">
                     <pre><code class="css">
-    .lebanon {
+    .war_1982 {
         background: #ab3122;
     }
-    .lebanon .outer {
+    .war_1982 .outer {
         max-width: 16px;
         background: #541a95;
         border-right: 8px solid #f4f4f4;
         border-left: 8px solid #f4f4f4;
     }
-    .lebanon .inner {
+    .war_1982 .inner {
         max-width: 8px;
         background: #ab3122;
         border-right: 8px solid #26972d;
@@ -254,7 +252,7 @@
             <div class="item-inner">
                 <div class="item-meta">
                     <h2 class="item-label" aria-label="2006">2006</h2>
-                    <figure class="lebanon2 war">
+                    <figure class="war_2006 war">
                         <span class="outer"></span>
                         <span class="inner"></span>
                         <span class="outer"></span>
@@ -266,10 +264,10 @@
                 </a>
                 <div class="item-source">
                     <pre><code class="css">
-    .lebanon2 .outer {
+    .war_2006 .outer {
         background: #e27e33;
     }
-    .lebanon2 .outer::before {
+    .war_2006 .outer::before {
         content: '';
         height: 50px;
         width: 20px;
@@ -279,13 +277,13 @@
         border-right: 10px solid #f4f4f4;
         border-left: 10px solid #f4f4f4;
     }
-    .lebanon2 .outer:first-child::before {
+    .war_2006 .outer:first-child::before {
         left: 0;
     }
-    .lebanon2 .outer:last-child::before {
+    .war_2006 .outer:last-child::before {
         right: 0;
     }
-    .lebanon2 .inner {
+    .war_2006 .inner {
         background: #ab3122;
         max-width: 28px;
         border-right: 10px solid #26972d;
@@ -296,12 +294,12 @@
             </div>
         </article>
     </div>
+    <a name="how"></a>
     <div class="container info">
-        <a name="how"></a>
         <div class="container-inner">
             <div class="inner">
                 <div class="article-header">
-                    <h2 class="container-title">How to Make a CSS Ribbon</h2>
+                    <h2 class="container-title">כיצד לבנות אות מערכה ב-CSS</h2>
                     <!-- <p>Pure CSS service ribbons</p> -->
                     <div class="sample">
                         <figure class="war example-ribbon">
@@ -310,8 +308,10 @@
                             <span class="outer"></span>
                         </figure>
                     </div>
-                    <p class="abstract even">Ribbons are implemented using the parts of CSS with a "symmetrical
-                        nature" (e.g. flex, border, rgba); manipulating these on a flexible surface makes nice drawing board for stripe based patterns.</p>
+                    <p class="abstract even">
+                        המנגנון העיקרי מאחורי ייצור אות המערכה בדפדפן הוא השימוש בכלי CSS בעלי מאפיינים סימטריים (למשל:
+                        flex, border, rgba) והמשחק בהם על משטח גמיש ותחום.
+                    </p>
                 </div>
                 <article>
                     <h3 class="article-title">Create a ribbon structure</h3>
@@ -372,22 +372,22 @@
         </div>
     </div>
 
-    <p class="back-to-top"><a href="#top">Back to top</a></p>
+    <p class="back-to-top"><a href="#top">חזרה לראש הדף</a></p>
 
     <footer class="footer-area">
-        <div class="container meta">
+        <div class="container meta" dir=rtl>
             <div class="container-inner">
                 <p>
-                    Check out the <a href="https://github.com/tomerlichtash/israeli-campaign-ribbons-css"
-                        target="_blank">Github project page</a>, explore the <a
+                    ניתן לעיין בקוד המקור ב<a href=" https://github.com/tomerlichtash/israeli-campaign-ribbons-css"
+                        target="_blank">דף הפרויקט ב-GitHub</a>, או לדלג ישירות לקובץ <a
                         href="https://github.com/tomerlichtash/israeli-campaign-ribbons-css/blob/master/stylesheets/ribbons.css"
-                        target="_blank">ribbons.css</a> file or tinker <a
-                        href="https://codepen.io/loremipsum/pen/GRgqMZw" target="blank">this code pen</a>.
+                        target="_blank">ribbons.css</a>. או לשחק ב-<a href="https://codepen.io/loremipsum/pen/GRgqMZw"
+                        target="blank">CodePen</a> הזה.
                 </p>
                 <p>
-                    This work is based on the visual information provided by the <a
-                        href="https://www.mod.gov.il/English/Campaign%20Ribbons/Pages/Service-Ribbons.aspx"
-                        target="_blank">MoD</a> website.
+                    האותות באתר זה מבוססים על המידע המוגש ב<a
+                        href="https://www.mod.gov.il/Citizen_Service/clalim/otot/Pages/sing-war.aspx"
+                        target="_blank">אתר משרד הביטחון</a>.
                 </p>
             </div>
         </div>
@@ -415,23 +415,19 @@
                             class="icon github"></a>
                     </li>
                 </ul>
-                <p>
+                <p dir="rtl">
                     <span class="footer-credit-label">2020</span>&nbsp;<span class=""
                         title="2019 (CC-BY-NC-SA) Tomer Lichtash">(<a
                             href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"
                             title="Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)">CC</a>)</span>&nbsp;<span><a
-                            href="https://tomerlichtash.com">Tomer Lichtash</a>
+                            href="https://tomerlichtash.com">תומר ליכטש</a>
                     </span>
                 </p>
-                <p class="disclaimer">This work is an independent development, and is not affiliated with any
-                    organization, goverment or other group as such.</p>
+                <p dir="rtl" class="disclaimer">אין לאתר זה אין קשר לאף ארגון, ממשלה או קבוצה אחרת.</p>
             </div>
         </div>
     </footer>
-    <p class="switch-lang">
-        <span class="current-lang" title="Current page language">EN</span> &bull; <a title="Switch to Hebrew"
-            class="switch-lang-he" title="Switch to Hebrew" href="/he">HE</a>
-    </p>
+    <a title="Switch to English" class="switch-lang" href="/">English</a>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-26201270-12"></script>
     <script src="./lib/highlight.pack.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>

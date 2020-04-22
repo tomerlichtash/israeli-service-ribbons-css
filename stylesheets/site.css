@@ -28,10 +28,11 @@ body {
     --itemBackgroundColor: var(--color6);
 
     --infoBgColor: var(--color7);
+
+    font-family: 'Glegoo';
 }
 
 html, body {
-    font-family: 'Glegoo';
     font-size: 18px;
     line-height: 2rem;
     font-weight: 300;
@@ -330,10 +331,13 @@ header .intro {
     position: fixed;
     top: 0.75rem;
     left: 0.75rem;
+    font-weight: 100;
     font-size: 0.8rem;
+    direction: ltr;
     background: rgba(255, 255, 255, 0.5);
     border-radius: 6px;
     padding: 0.25rem 1rem;
+    font-family: "Arial";
 }
 
 .disclaimer {
