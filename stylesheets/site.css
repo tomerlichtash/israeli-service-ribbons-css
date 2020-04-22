@@ -169,20 +169,48 @@ header .intro {
     letter-spacing: -0.1rem;
     width: 100%;
 }
-.item img {
-    opacity: 0;
+.item .read-more {
+    opacity: 0.5;
+    display: inline-flex;
+    align-items: center;
+    align-content: center;
+    /* background: red; */
     position: absolute;
-    top: -50px;
+    top: -45px;
     left: 1rem;
+}
+.item:hover .read-more {
     top: 1rem;
-    margin: 1rem 0;
+    opacity: 1;
+    vertical-align: top;
+}
+
+.item .read-more > span {
+    flex: 2;
+    /* background: blue; */
+    /* vertical-align: top; */
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+.item .read-more > img {
+    flex: 1;
+    /* display: inline-block; */
+    position: relative;
+    /* display: inline-block; */
+    /* transform: scale(0.8); */
+    /* margin: 1rem 0; */
     transition: var(--baseTransition);
     width: 100px;
+    margin-right: 0.5rem;
 }
-.item:hover img {
+/* .item:hover img {
     opacity: 1;
     top: 0;
+    transform: scale(1);
 }
+.item:hover img:hover {
+    transform: scale(1.1);
+} */
 
 /* footer */
 .footer-area {

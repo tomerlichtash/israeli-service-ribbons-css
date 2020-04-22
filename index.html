@@ -1,4 +1,4 @@
-<!-- To Zimmerman ~ https://www.izkor.gov.il/%D7%90%D7%99%D7%99%D7%9C%20%D7%A6%D7%99%D7%9E%D7%A8%D7%9E%D7%9F/en_2874b010be947b8686a3d246c5a6d6cb -->
+<!-- For Zimmerman ~ https://www.izkor.gov.il/%D7%90%D7%99%D7%99%D7%9C%20%D7%A6%D7%99%D7%9E%D7%A8%D7%9E%D7%9F/en_2874b010be947b8686a3d246c5a6d6cb -->
 <!doctype html>
 <html lang="en">
 
@@ -38,8 +38,7 @@
         </h1>
         <div class="container-inner">
             <p class="intro abstract">"Service Ribbons" commemorate a person's participation in war, campaign and
-                combat up to the establishment of the State of Israel. Ribbons are made of cloth on steel; now
-                they can be forged in HTML &amp; CSS.
+                combat up to the establishment of the State of Israel. Ribbons are made of cloth on steel. This project is about creating them with HTML &amp; CSS.
                 <a href="#how" aria-label="Read more" title="How does it work? Read more">Learn more</a> &raquo;
             </p>
             <!-- <p>Want to make your own ribbons? 
@@ -57,9 +56,10 @@
                         <span class="outer"></span>
                     </figure>
                 </div>
-                <a target="_blank" title="Read about 1948 in Wikipedia"
+                <a class="read-more" class="read-more" target="_blank" title="Read about this war in Wikipedia"
                     href="https://en.wikipedia.org/wiki/1948_Arab%E2%80%93Israeli_War">
                     <img src="assets/images/1948.jpg" alt="Service Ribon - 1948" />
+                    <span>Read about this war</span>
                 </a>
             </div>
             <div class="item-source">
@@ -92,9 +92,10 @@
                         <span class="outer"></span>
                     </figure>
                 </div>
-                <a target="_blank" title="Read about 1948 in Wikipedia"
+                <a class="read-more" target="_blank" title="Read about this war in Wikipedia"
                     href="https://en.wikipedia.org/wiki/Suez_Crisis">
                     <img src="assets/images/1956.jpg" alt="Service Ribon - 1956" />
+                    <span>Read about this war</span>
                 </a>
                 <div class="item-source">
                     <pre><code class="css">
@@ -126,9 +127,10 @@
                         <span class="outer"></span>
                     </figure>
                 </div>
-                <a target="_blank" title="Read about 1967 in Wikipedia"
+                <a class="read-more" target="_blank" title="Read about this war in Wikipedia"
                     href="https://en.wikipedia.org/wiki/Six-Day_War">
                     <img src="assets/images/1967.jpg" alt="Service Ribon - 1967" />
+                    <span>Read about this war</span>
                 </a>
                 <div class="item-source">
                     <pre><code class="css">
@@ -160,9 +162,10 @@
                         <span class="outer"></span>
                     </figure>
                 </div>
-                <a target="_blank" title="Read about 1970 in Wikipedia"
+                <a class="read-more" target="_blank" title="Read about this war in Wikipedia"
                     href="https://en.wikipedia.org/wiki/War_of_Attrition">
                     <img src="assets/images/1970.jpg" alt="Service Ribon - 1970" />
+                    <span>Read about this war</span>
                 </a>
                 <div class="item-source">
                     <pre><code class="css">
@@ -194,9 +197,10 @@
                         <span class="outer"></span>
                     </figure>
                 </div>
-                <a target="_blank" title="Read about 1967 in Wikipedia"
+                <a class="read-more" target="_blank" title="Read about this war in Wikipedia"
                     href="https://en.wikipedia.org/wiki/Yom_war_1973_War">
                     <img src="assets/images/1973.jpg" alt="Service Ribon - 1973" />
+                    <span>Read about this war</span>
                 </a>
                 <div class="item-source">
                     <pre><code class="css">
@@ -223,9 +227,10 @@
                         <span class="outer"></span>
                     </figure>
                 </div>
-                <a target="_blank" title="Read about 1982 in Wikipedia"
+                <a class="read-more" target="_blank" title="Read about this war in Wikipedia"
                     href="https://en.wikipedia.org/wiki/1982_Lebanon_War">
                     <img src="assets/images/1982.jpg" alt="Service Ribon - 1982" />
+                    <span>Read about this war</span>
                 </a>
                 <div class="item-source">
                     <pre><code class="css">
@@ -258,9 +263,10 @@
                         <span class="outer"></span>
                     </figure>
                 </div>
-                <a target="_blank" title="Read about 2006 in Wikipedia"
+                <a class="read-more" target="_blank" title="Read about this war in Wikipedia"
                     href="https://en.wikipedia.org/wiki/2006_Lebanon_War">
                     <img src="assets/images/2006.jpg" alt="Service Ribon - 2006" />
+                    <span>Read about this war</span>
                 </a>
                 <div class="item-source">
                     <pre><code class="css">
@@ -307,9 +313,9 @@
                             <span class="outer"></span>
                         </figure>
                     </div>
-                    <p class="abstract even">Ribbons are implemented using the parts of CSS with a "symmetrical
-                        nature" (e.g. flex, border, rgba); manipulating these on a flexible surface makes nice drawing
-                        board for stripe based patterns.</p>
+                    <p class="abstract even">Making ribbons in the browser is a play with the symmetrical and layered nature
+                        of CSS (e.g. flex, border, rgba) in order to generate and manipulate flexible stripes.
+                    </p>
                 </div>
                 <article>
                     <h3 class="article-title">Create a ribbon structure</h3>
@@ -376,16 +382,18 @@
         <div class="container meta">
             <div class="container-inner">
                 <p>
-                    Check out the <a href="https://github.com/tomerlichtash/israeli-campaign-ribbons-css"
-                        target="_blank">Github project page</a>, explore the <a
-                        href="https://github.com/tomerlichtash/israeli-campaign-ribbons-css/blob/master/stylesheets/ribbons.css"
-                        target="_blank">ribbons.css</a> file or tinker <a
+                    Check out <a href="https://github.com/tomerlichtash/israeli-campaign-ribbons-css"
+                        target="_blank">the project on Github</a> or tinker with <a
                         href="https://codepen.io/loremipsum/pen/GRgqMZw" target="blank">this code pen</a>.
                 </p>
                 <p>
-                    This work is based on information provided by the <a
+                    This work is based on public information published on the <a
                         href="https://www.mod.gov.il/English/Campaign%20Ribbons/Pages/Service-Ribbons.aspx"
                         target="_blank">MoD</a> website.
+                </p>
+                <p>
+                    This work is an independent development by its author.
+                    
                 </p>
             </div>
         </div>
@@ -421,12 +429,13 @@
                             href="https://tomerlichtash.com">Tomer Lichtash</a>
                     </span>
                 </p>
-                <p class="disclaimer">This work is an independent development, and is not affiliated with any
-                    organization, goverment or other group as such.</p>
+                <!-- <p class="disclaimer">This work is not affiliated with any organization, goverment or other group as
+                    such.</p> -->
             </div>
         </div>
     </footer>
-    <a title="Switch to Hebrew" class="switch-lang" href="https://tomerlichtash.github.io/israeli-campaign-ribbons-css/he">עברית</a>
+    <a title="Switch to Hebrew" class="switch-lang"
+        href="https://tomerlichtash.github.io/israeli-campaign-ribbons-css/he">עברית</a>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-26201270-12"></script>
     <script src="./lib/highlight.pack.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
