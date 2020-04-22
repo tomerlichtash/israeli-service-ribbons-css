@@ -40,5 +40,19 @@
 }
 ```
 
+## Resources
+
+### Demos:
 * Demo: https://tomerlichtash.github.io/israeli-campaign-ribbons-css/
 * CodePen: https://codepen.io/loremipsum/pen/GRgqMZw
+
+### Israeli Ministry of Defence - About Service Ribbons:
+* EN: https://www.mod.gov.il/English/Campaign%20Ribbons/Pages/Service-Ribbons.aspx
+* HE: https://www.mod.gov.il/Citizen_Service/clalim/otot/Pages/sing-war.aspx
+
+### Resource for Service Ribbon SVG (Wikipedia)
+* EN: https://en.wikipedia.org/wiki/Orders,_decorations,_and_medals_of_Israel#Campaign_ribbons_and_medal
+* HE: https://he.wikipedia.org/wiki/%D7%A2%D7%99%D7%98%D7%95%D7%A8%D7%99_%D7%A6%D7%94%22%D7%9C
+
+#### About Service Ribbons (Wikipedia, Hebrew):
+* HE: https://he.wikipedia.org/wiki/%D7%90%D7%95%D7%AA_%D7%9E%D7%A2%D7%A8%D7%9B%D7%94_(%D7%99%D7%A9%D7%A8%D7%90%D7%9C)
