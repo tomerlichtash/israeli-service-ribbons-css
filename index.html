@@ -1,6 +1,6 @@
 <!-- For Zimmerman ~ https://www.izkor.gov.il/%D7%90%D7%99%D7%99%D7%9C%20%D7%A6%D7%99%D7%9E%D7%A8%D7%9E%D7%9F/en_2874b010be947b8686a3d246c5a6d6cb -->
 <!doctype html>
-<html lang="en">
+<html lang="he">
 
 <head>
     <title>Campaing Ribbons in CSS</title>
@@ -38,11 +38,10 @@
         </h1>
         <div class="container-inner">
             <p class="intro abstract">"Service Ribbons" commemorate a person's participation in war, campaign and
-                combat up to the establishment of the State of Israel. Ribbons are made of cloth on steel. This project is about creating them with HTML &amp; CSS.
+                combat up to the establishment of the State of Israel. Ribbons are made of cloth on steel. This project
+                is about creating them with HTML &amp; CSS.
                 <a href="#how" aria-label="Read more" title="How does it work? Read more">Learn more</a> &raquo;
             </p>
-            <!-- <p>Want to make your own ribbons? 
-            </p> -->
         </div>
     </header>
     <div class="content container" dir="ltr">
@@ -56,10 +55,9 @@
                         <span class="outer"></span>
                     </figure>
                 </div>
-                <a class="read-more" class="read-more" target="_blank" title="Read about this war in Wikipedia"
+                <a class="read-more" target="_blank" title="Read about this war in Wikipedia"
                     href="https://en.wikipedia.org/wiki/1948_Arab%E2%80%93Israeli_War">
-                    <img src="assets/images/1948.jpg" alt="Service Ribon - 1948" />
-                    <span>Read about this war</span>
+                    <span class="external-link more-info">i</span>
                 </a>
             </div>
             <div class="item-source">
@@ -94,8 +92,7 @@
                 </div>
                 <a class="read-more" target="_blank" title="Read about this war in Wikipedia"
                     href="https://en.wikipedia.org/wiki/Suez_Crisis">
-                    <img src="assets/images/1956.jpg" alt="Service Ribon - 1956" />
-                    <span>Read about this war</span>
+                    <span class="external-link"><span class="more-info">i</span></span>
                 </a>
                 <div class="item-source">
                     <pre><code class="css">
@@ -129,8 +126,7 @@
                 </div>
                 <a class="read-more" target="_blank" title="Read about this war in Wikipedia"
                     href="https://en.wikipedia.org/wiki/Six-Day_War">
-                    <img src="assets/images/1967.jpg" alt="Service Ribon - 1967" />
-                    <span>Read about this war</span>
+                    <span class="external-link more-info">i</span>
                 </a>
                 <div class="item-source">
                     <pre><code class="css">
@@ -164,8 +160,7 @@
                 </div>
                 <a class="read-more" target="_blank" title="Read about this war in Wikipedia"
                     href="https://en.wikipedia.org/wiki/War_of_Attrition">
-                    <img src="assets/images/1970.jpg" alt="Service Ribon - 1970" />
-                    <span>Read about this war</span>
+                    <span class="external-link more-info">i</span>
                 </a>
                 <div class="item-source">
                     <pre><code class="css">
@@ -199,8 +194,7 @@
                 </div>
                 <a class="read-more" target="_blank" title="Read about this war in Wikipedia"
                     href="https://en.wikipedia.org/wiki/Yom_war_1973_War">
-                    <img src="assets/images/1973.jpg" alt="Service Ribon - 1973" />
-                    <span>Read about this war</span>
+                    <span class="external-link more-info">i</span>
                 </a>
                 <div class="item-source">
                     <pre><code class="css">
@@ -229,8 +223,7 @@
                 </div>
                 <a class="read-more" target="_blank" title="Read about this war in Wikipedia"
                     href="https://en.wikipedia.org/wiki/1982_Lebanon_War">
-                    <img src="assets/images/1982.jpg" alt="Service Ribon - 1982" />
-                    <span>Read about this war</span>
+                    <span class="external-link more-info">i</span>
                 </a>
                 <div class="item-source">
                     <pre><code class="css">
@@ -265,8 +258,7 @@
                 </div>
                 <a class="read-more" target="_blank" title="Read about this war in Wikipedia"
                     href="https://en.wikipedia.org/wiki/2006_Lebanon_War">
-                    <img src="assets/images/2006.jpg" alt="Service Ribon - 2006" />
-                    <span>Read about this war</span>
+                    <span class="external-link more-info">i</span>
                 </a>
                 <div class="item-source">
                     <pre><code class="css">
@@ -313,8 +305,10 @@
                             <span class="outer"></span>
                         </figure>
                     </div>
-                    <p class="abstract even">Making ribbons in the browser is a play with the symmetrical and layered nature
-                        of CSS (e.g. flex, border, rgba) in order to generate and manipulate flexible stripes.
+                    <p class="abstract even">Making ribbons in the browser is a play on the symmetrical and layered
+                        nature
+                        of CSS (e.g. flex, border, rgba), that can be manipulate to generate flexible stripes on a
+                        surface.
                     </p>
                 </div>
                 <article>
@@ -333,8 +327,7 @@
                     <div class="article-content">
                         <h3 class="article-title">Add a common layout</h3>
                         <pre><code class="css">
-    /*  common layout (in this case the class `.war`)
-        uses flex for symmetry purposes */
+    /*  common ribbon layout uses flex for symmetry purposes */
 
     .war {
         position: relative;
@@ -375,9 +368,7 @@
             </div>
         </div>
     </div>
-
     <p class="back-to-top"><a href="#top">Back to top</a></p>
-
     <footer class="footer-area">
         <div class="container meta">
             <div class="container-inner">
@@ -387,13 +378,12 @@
                         href="https://codepen.io/loremipsum/pen/GRgqMZw" target="blank">this code pen</a>.
                 </p>
                 <p>
-                    This work is based on public information published on the <a
+                    The ribbon designs are based on public information from the <a
                         href="https://www.mod.gov.il/English/Campaign%20Ribbons/Pages/Service-Ribbons.aspx"
                         target="_blank">MoD</a> website.
                 </p>
                 <p>
                     This work is an independent development by its author.
-                    
                 </p>
             </div>
         </div>
@@ -429,12 +419,10 @@
                             href="https://tomerlichtash.com">Tomer Lichtash</a>
                     </span>
                 </p>
-                <!-- <p class="disclaimer">This work is not affiliated with any organization, goverment or other group as
-                    such.</p> -->
             </div>
         </div>
     </footer>
-    <a title="Switch to Hebrew" class="switch-lang"
+    <a title="Switch to Hebrew" class="switch-lang to-he"
         href="https://tomerlichtash.github.io/israeli-campaign-ribbons-css/he">עברית</a>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-26201270-12"></script>
     <script src="./lib/highlight.pack.js"></script>
@@ -443,7 +431,6 @@
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'UA-26201270-12');
     </script>
 </body>

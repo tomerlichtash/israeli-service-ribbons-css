@@ -1,5 +1,10 @@
 body.he {
     font-family: 'Varela Round', sans-serif;
     font-weight: 700;
-    /* direction: rtl; */
+}
+
+.switch-lang {
+    top: 0.75rem;
+    left: 0.75rem;
+    right: auto;
 }

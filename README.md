@@ -1,9 +1,5 @@
 # Israeli Campaign Ribbons in Pure CSS
 
-* Demo: https://tomerlichtash.github.io/israeli-campaign-ribbons-css/
-* CodePen: https://codepen.io/loremipsum/pen/GRgqMZw
-
-### Ribbon HTML/CSS Structure
 ```
 <figure class="komemiut war">
     <span class="a1"></span>
@@ -12,6 +8,8 @@
 </figure>
 ```
 ```
+/* common layout */
+
 .war {
     position: relative;
     overflow: hidden;
@@ -25,19 +23,22 @@
     z-index: 1;
 }
 ```
+```
+/*  ribbon variant */
 
-### Color palette:
-* blue: #184ea4
-* light blue: #4d81ba
-* cyan: #92c8e2
-* red: #ab3122
-* ornage: #e27e33
-* light orange: #bd7755
-* purple: #541a95
-* green: #26972d
-* off-white: #f4f4f4
+.some-war {
+    background: #c0a;
+}
+.some-war .outer {
+    border-right: 12px double #fa9;
+    border-left: 8px double rgba(100, 150, 200, 0.9);
+    max-width: 8px;
+}
+.some-war .inner {
+    background: #349;
+    max-width: 44px;
+}
+```
 
-### Sources:
-* https://www.mod.gov.il/Citizen_Service/clalim/otot/Pages/sing-war.aspx
-* https://www.mod.gov.il/English/Campaign%20Ribbons/Pages/Service-Ribbons.aspx
-* https://en.wikipedia.org/wiki/Orders,_decorations,_and_medals_of_Israel#Campaign_ribbons_and_medal
+* Demo: https://tomerlichtash.github.io/israeli-campaign-ribbons-css/
+* CodePen: https://codepen.io/loremipsum/pen/GRgqMZw

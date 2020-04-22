@@ -1,15 +1,9 @@
 body {
     --color1: #048;
-
     --color2: #2060fa;
     --color3: #c0a;
-
-    --color4: #222;
-    --color5: #c00;
-
     --color6: #fff;
     --color7: #daede8;
-
     --itemBoxShadow: 0 0 1rem rgba(0, 0, 0, 0.1);
     --itemBoxShadowHover: 0 0 1rem rgba(0, 0, 0, 0.25);
     --baseTransition: 125ms all ease-in-out;
@@ -19,17 +13,12 @@ body {
     --linkColor: var(--color2);
     --linkHoverColor: var(--color3);
 
-    --altLinkColor: var(--color4);
-    --altLinkHoverColor: var(--color5);
-
     --titleSize: 1.4rem;
 
     --textColor: var(--color1);
     --itemBackgroundColor: var(--color6);
 
     --infoBgColor: var(--color7);
-
-    font-family: 'Glegoo';
 }
 
 html, body {
@@ -37,6 +26,7 @@ html, body {
     line-height: 2rem;
     font-weight: 300;
     margin: 0;
+    font-family: 'Glegoo';
     text-align: center;
 }
 
@@ -47,8 +37,6 @@ h1 {
 p {
     color: var(--textColor);
     margin: 0;
-    /* font-size: 1rem; */
-    /* line-height: 1.6rem; */
 }
 
 a {
@@ -79,7 +67,6 @@ code {
     cursor: text;
 }
 
-
 .site-title a {
     border: none;
 }
@@ -103,8 +90,6 @@ code {
 header .intro {
     padding: 0 2rem;
     margin: 4rem auto 0;
-    /* line-height: 4rem; */
-    /* font-size: 1rem; */
 }
 
 /* content */
@@ -169,67 +154,50 @@ header .intro {
     letter-spacing: -0.1rem;
     width: 100%;
 }
+
 .item .read-more {
-    opacity: 0.5;
-    display: inline-flex;
-    align-items: center;
-    align-content: center;
-    /* background: red; */
     position: absolute;
     top: -45px;
     left: 1rem;
 }
 .item:hover .read-more {
     top: 1rem;
-    opacity: 1;
     vertical-align: top;
 }
 
-.item .read-more > span {
-    flex: 2;
-    /* background: blue; */
-    /* vertical-align: top; */
-    font-size: 0.7rem;
-    font-weight: 700;
+.item .external-link {
+    transform: scale(0.4);
 }
-.item .read-more > img {
-    flex: 1;
-    /* display: inline-block; */
-    position: relative;
-    /* display: inline-block; */
-    /* transform: scale(0.8); */
-    /* margin: 1rem 0; */
-    transition: var(--baseTransition);
-    width: 100px;
-    margin-right: 0.5rem;
-}
-/* .item:hover img {
-    opacity: 1;
-    top: 0;
+.item:hover .external-link {
     transform: scale(1);
 }
-.item:hover img:hover {
-    transform: scale(1.1);
-} */
+.external-link {
+    width: 1.5rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    display: inline-block;
+    border: 1px solid #e0e0e0;
+    border-radius: 50%;
+}
+.external-link:hover {
+    background: #f0f0f0;
+}
 
-/* footer */
+.more-info {
+    font-size: 1rem;
+    font-weight: 900;
+}
+
 .footer-area {
     direction: ltr;
-    /* letter-spacing: 0.05rem; */
     text-align: center;
     width: 100%;
 }
-
 
 /* container */
 .container {
     margin: 0 auto;
 }
-.container-inner {
-    /* padding: 4rem 0; */
-}
-/* .container:not(.content) {
-} */
 .container:not(.content) .container-inner {
     max-width: 960px;
     margin: 0 auto;
@@ -243,7 +211,6 @@ header .intro {
     overflow: hidden;
 }
 .container.info .container-inner {
-    /* width: 600px; */
     margin: 0 auto;
 }
 .container.info pre {
@@ -267,7 +234,6 @@ header .intro {
     font-weight: 700;
     letter-spacing: 0.4rem;
     font-size: var(--titleSize);
-    /* line-height: 8rem; */
     text-transform: uppercase;
     margin: 0;
 }
@@ -277,9 +243,6 @@ header .intro {
     font-weight: 100;
 }
 
-.container.meta {
-    /* border-top: 1px solid rgba(0, 0, 0, 0.25); */
-}
 .container.meta .container-inner {
     padding: 2rem;
 }
@@ -291,10 +254,6 @@ header .intro {
     margin: 0 0 4rem;
 }
 
-.abstract p {
-    /* font-size: 1.2rem; */
-    /* line-height: 2.4rem; */
-}
 .abstract.even {
     padding: 0 2rem;
     margin: 0 auto;
@@ -357,8 +316,8 @@ header .intro {
 
 .switch-lang {
     position: fixed;
+    right: 1rem;
     top: 0.75rem;
-    left: 0.75rem;
     font-weight: 100;
     font-size: 0.8rem;
     direction: ltr;
@@ -374,11 +333,4 @@ header .intro {
 
 .back-to-top {
     margin: 2rem 0 0;
-}
-
-.disclaimer {
-    padding: 0 2rem;
-    margin: 4rem 0;
-    line-height: 1.4rem;
-    font-style: italic;
 }
