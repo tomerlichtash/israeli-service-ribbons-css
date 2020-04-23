@@ -26,7 +26,7 @@ html, body {
     line-height: 2rem;
     font-weight: 300;
     margin: 0;
-    font-family: 'Glegoo';
+    font-family: 'Glegoo', 'Varela Round', sans-serif;
     text-align: center;
 }
 
@@ -52,15 +52,13 @@ figure {
     margin: 0 auto;
 }
 
-header {
-    padding: 4rem 0;
-}
-
 pre {
+    padding: 0;
     margin: 0;
 }
 
 code {
+    font-size: 0.8rem;
     direction: ltr;
     text-align: left;
     line-height: 1rem;
@@ -87,9 +85,13 @@ code {
     font-weight: 100;
     font-size: var(--titleSize);
 }
+
+header {
+    padding-top: 2rem;
+}
+
 header .intro {
-    padding: 0 2rem;
-    margin: 4rem auto 0;
+    padding: 2rem 1rem;
 }
 
 /* content */
@@ -133,7 +135,8 @@ header .intro {
 .item-source,
 .item-source pre code  {
     height: 150px;
-    font-size: 0.8rem;
+    padding-left: 0.75rem;
+    /* font-size: 0.8rem; */
 }
 .item:hover {
     box-shadow: var(--itemBoxShadowHover);
@@ -217,11 +220,10 @@ header .intro {
     margin-bottom: 2rem;
 }
 .container.info code {
-    padding: 1rem 0;
-    line-height: 1.4rem;
-    font-size: 1rem;
+    padding: 0 1rem;
+    /* font-size: 0.8rem; */
     box-shadow: var(--itemBoxShadow);
-    background: #fff;
+    background: rgba(255, 255, 255, 0.7);
     transition: var(--baseTransition);
 }
 .container.info code:hover {
@@ -252,12 +254,6 @@ header .intro {
 
 .container.info .article-header {
     margin: 0 0 4rem;
-}
-
-.abstract.even {
-    padding: 0 2rem;
-    margin: 0 auto;
-    max-width: 800px;
 }
 
 .container.footer {
@@ -299,32 +295,23 @@ header .intro {
     content: ')';
 }
 .icon.facebook {
-    background-image: url(../assets/svg/facebook-f.svg);
+    background-image: url(../assets/svg/footer/facebook-f.svg);
 }
 .icon.instagram {
-    background-image: url(../assets/svg/instagram.svg);
+    background-image: url(../assets/svg/footer/instagram.svg);
 }
 .icon.github{
-    background-image: url(../assets/svg/github-alt.svg);
+    background-image: url(../assets/svg/footer/github-alt.svg);
 }
 .icon.twitter {
-    background-image: url(../assets/svg/twitter.svg);
+    background-image: url(../assets/svg/footer/twitter.svg);
 }
 .icon.linkedin {
-    background-image: url(../assets/svg/linkedin.svg);
+    background-image: url(../assets/svg/footer/linkedin.svg);
 }
 
-.switch-lang {
-    position: fixed;
-    right: 1rem;
-    top: 0.75rem;
-    font-weight: 100;
-    font-size: 0.8rem;
-    direction: ltr;
-    background: rgba(255, 255, 255, 0.5);
-    border-radius: 6px;
-    padding: 0.25rem 1rem;
-    font-family: "Arial";
+.langs {
+    margin: 1rem 0;
 }
 
 .sample {

@@ -1,10 +1,15 @@
-body.he {
-    font-family: 'Varela Round', sans-serif;
-    font-weight: 700;
+.icon.facebook {
+    background-image: url(../../assets/svg/footer/facebook-f.svg);
 }
-
-.switch-lang {
-    top: 0.75rem;
-    left: 0.75rem;
-    right: auto;
+.icon.instagram {
+    background-image: url(../../assets/svg/footer/instagram.svg);
+}
+.icon.github{
+    background-image: url(../../assets/svg/footer/github-alt.svg);
+}
+.icon.twitter {
+    background-image: url(../../assets/svg/footer/twitter.svg);
+}
+.icon.linkedin {
+    background-image: url(../../assets/svg/footer/linkedin.svg);
 }
