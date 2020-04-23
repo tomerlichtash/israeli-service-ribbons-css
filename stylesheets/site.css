@@ -285,6 +285,9 @@ header .intro {
     transition: var(--baseTransition);
     width: 21px;
 }
+.container.footer .icon:hover {
+    filter: invert(10%) sepia(100%) saturate(7093%) hue-rotate(305deg) brightness(93%) contrast(101%);
+}
 .container.footer .license {
     margin: 0 0.35rem;
 }
