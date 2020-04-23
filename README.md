@@ -1,4 +1,4 @@
-# Israeli Campaign Ribbons in Pure CSS
+# Israeli Service Ribbons in Pure CSS
 
 ```
 <figure class="komemiut war">
@@ -43,7 +43,7 @@
 ## Resources
 
 ### Demos:
-* Demo: https://tomerlichtash.github.io/israeli-campaign-ribbons-css/
+* Demo: https://tomerlichtash.github.io/israeli-service-ribbons-css/
 * CodePen: https://codepen.io/loremipsum/pen/GRgqMZw
 
 ### Israeli Ministry of Defence - About Service Ribbons:
