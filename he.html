@@ -1,9 +1,10 @@
 <!-- לצימרמן ~ https://www.izkor.gov.il/%D7%90%D7%99%D7%99%D7%9C%20%D7%A6%D7%99%D7%9E%D7%A8%D7%9E%D7%9F/en_2874b010be947b8686a3d246c5a6d6cb -->
 <!doctype html>
-<html lang="en">
+<html lang="he" dir="rtl">
 
 <head>
-    <title>אותות מערכה ב-CSS</title>
+    <title>Service Ribbons in CSS</title>
+
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
@@ -24,21 +25,20 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
     <meta name=viewport content="width=device-width, initial-scale=1">
-    <meta name="description" content="אותות מערכה ב-CSS">
-    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <meta name="description" content="Israeli Service Ribbons in CSS">
     <link href="https://fonts.googleapis.com/css2?family=Glegoo:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./stylesheets/site.css">
-    <link rel="stylesheet" href="./stylesheets/he.css">
     <link rel="stylesheet" href="./stylesheets/ribbons.css">
     <link rel="stylesheet" href="./stylesheets/highlight.css">
     <link rel="stylesheet" href="./stylesheets/media.css">
 </head>
 
-<body class="he" dir="rtl">
+<body dir="rtl">
     <a name="top"></a>
     <header class="container">
         <h1 class="site-title">
-            <a href="https://tomerlichtash.github.io/israeli-service-ribbons-css/he" class="site-title-link">
+            <a href="https://tomerlichtash.github.io/israeli-service-ribbons-css/" class="site-title-link">
                 <span class="text">אותות מערכה ב-CSS</span>
             </a>
         </h1>
@@ -50,7 +50,7 @@
             </p>
         </div>
     </header>
-    <div class="content container" dir="ltr">
+    <div class="content container">
         <article class="item">
             <div class="item-inner">
                 <div class="item-meta">
@@ -311,13 +311,22 @@
                             <span class="outer"></span>
                         </figure>
                     </div>
-                    <p class="abstract">
-                        המשחק מאחורי ייצור אות המערכה בדפדפן הוא בשימוש בכלי CSS בעלי מאפיינים סימטריים (למשל:
-                        flex, border, rgba) ועיצובם על משטח גמיש ותחום.
-                    </p>
+                    <span class="abstract">
+                        <p>
+                            המשחק מאחורי ייצור אות המערכה בדפדפן הוא בשימוש בכלי CSS בעלי מאפיינים סימטריים (למשל:
+                            flex, border, rgba) ועיצובם על משטח תחום.
+                        </p>
+                        <p>
+                            ניתן לעיין בקוד המקור ב<a
+                                href="https://github.com/tomerlichtash/israeli-service-ribbons-css" target="_blank">דף
+                                הפרויקט ב-Github</a> או לשחק ב<a href="https://codepen.io/loremipsum/pen/GRgqMZw"
+                                target="blank">דמו ב-CodePen</a>.
+                        </p>
+                    </span>
+
                 </div>
                 <article>
-                    <h3 class="article-title">Create a ribbon structure</h3>
+                    <h3 class="article-title">הוסיפו את החלק הזה לקובץ ה-HTML.</h3>
                     <pre><code class="html">
 &lt;!-- a ribbon is a `figure` element, nesting 3 `span` elements --&gt;
 
@@ -330,7 +339,7 @@
                 </article>
                 <article>
                     <div class="article-content">
-                        <h3 class="article-title">Add a common layout</h3>
+                        <h3 class="article-title">הוסיפו את החלק הזה לקובץ ה-CSS.</h3>
                         <pre><code class="css">
 /*  common ribbon layout uses flex for symmetry purposes */
 
@@ -346,13 +355,7 @@
     border-radius: 3px;
     z-index: 1;
 }
-                    </code></pre>
-                    </div>
-                </article>
-                <article>
-                    <div class="article-content">
-                        <h3 class="article-title">Each ribbon is a overrides the ribbon layout and its inner parts</h3>
-                        <pre><code class="css">
+
 /*  ribbon variant */
 
 .some-war {
@@ -370,23 +373,19 @@
                         </code></pre>
                     </div>
                 </article>
+
             </div>
         </div>
     </div>
     <footer class="footer-area">
-        <div class="container meta" dir=rtl>
+        <div class="container meta">
             <div class="container-inner">
-                <p>
-                    ניתן לעיין בקוד המקור ב<a href="https://github.com/tomerlichtash/israeli-service-ribbons-css"
-                        target="_blank">דף הפרויקט ב-Github</a> או לשחק ב<a
-                        href="https://codepen.io/loremipsum/pen/GRgqMZw" target="blank">טיוטת ה-CodePen</a>.
-                </p>
                 <p>
                     צבעי האותות ועיצובם מבוססים על המידע המוגש ב<a
                         href="https://www.mod.gov.il/Citizen_Service/clalim/otot/Pages/sing-war.aspx"
                         target="_blank">אתר משרד הביטחון</a>.
                 </p>
-                <p dir="rtl">אתר זה הנו עבודה עצמאית ובלתי תלויה.</p>
+                <p>אתר זה הנו עבודה עצמאית ובלתי תלויה. השימוש בה הוא חופשי.</p>
                 <p class="back-to-top"><a href="#top">חזרה לראש הדף</a></p>
                 <div class="langs">
                     <a title="Click here to load an English version of this page" class="switch-lang to-en"
@@ -396,7 +395,7 @@
         </div>
         <div class="container footer">
             <div class="container-inner">
-                <ul class="iconList">
+                <ul class="iconList" dir="ltr">
                     <li class="iconContainer">
                         <a title="Facebook" target="_blank" href="https://facebook.com/tomerlichtash"
                             class="icon facebook"></a>
@@ -418,7 +417,7 @@
                             class="icon github"></a>
                     </li>
                 </ul>
-                <p dir="rtl">
+                <p>
                     <span class="footer-credit-label">2020</span>&nbsp;<span
                         title="2019 (CC-BY-NC-SA) Tomer Lichtash">(<a
                             href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"

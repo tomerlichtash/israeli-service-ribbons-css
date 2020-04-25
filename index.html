@@ -1,9 +1,9 @@
 <!-- For Zimmerman ~ https://www.izkor.gov.il/%D7%90%D7%99%D7%99%D7%9C%20%D7%A6%D7%99%D7%9E%D7%A8%D7%9E%D7%9F/en_2874b010be947b8686a3d246c5a6d6cb -->
 <!doctype html>
-<html lang="he">
+<html lang="en">
 
 <head>
-    <title>Campaing Ribbons in CSS</title>
+    <title>Service Ribbons in CSS</title>
 
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
@@ -199,7 +199,7 @@
                     </figure>
                 </div>
                 <a class="read-more" target="_blank" title="Read about this war in Wikipedia"
-                    href="https://en.wikipedia.org/wiki/Yom_war_1973_War">
+                    href="https://en.wikipedia.org/wiki/Yom_Kippur_War">
                     <span class="external-link more-info">i</span>
                 </a>
                 <div class="item-source">
@@ -311,14 +311,22 @@
                             <span class="outer"></span>
                         </figure>
                     </div>
-                    <p class="abstract even">Making ribbons in the browser is a play on the symmetrical and layered
-                        nature
-                        of CSS (e.g. flex, border, rgba), that can be manipulate to generate flexible stripes on a
-                        surface.
-                    </p>
+                    <span class="abstract">
+                        <p>Making ribbons in the browser is a play on the symmetrical and layered
+                            nature
+                            of CSS (e.g. flex, border, rgba) that can be manipulated to generate flexible stripes.
+                        </p>
+                        <p>
+                            Get the source from the project's <a
+                                href="https://github.com/tomerlichtash/israeli-service-ribbons-css"
+                                target="_blank">Github page</a> or play with the <a
+                                href="https://codepen.io/loremipsum/pen/GRgqMZw" target="blank">live demo</a>.
+                        </p>
+                    </span>
+
                 </div>
                 <article>
-                    <h3 class="article-title">Create a ribbon structure</h3>
+                    <h3 class="article-title">Add this snippet in your HTML `body` section.</h3>
                     <pre><code class="html">
 &lt;!-- a ribbon is a `figure` element, nesting 3 `span` elements --&gt;
 
@@ -331,7 +339,7 @@
                 </article>
                 <article>
                     <div class="article-content">
-                        <h3 class="article-title">Add a common layout</h3>
+                        <h3 class="article-title">Add these snippets to your CSS file.</h3>
                         <pre><code class="css">
 /*  common ribbon layout uses flex for symmetry purposes */
 
@@ -347,13 +355,7 @@
     border-radius: 3px;
     z-index: 1;
 }
-                    </code></pre>
-                    </div>
-                </article>
-                <article>
-                    <div class="article-content">
-                        <h3 class="article-title">Each ribbon is a overrides the ribbon layout and its inner parts</h3>
-                        <pre><code class="css">
+
 /*  ribbon variant */
 
 .some-war {
@@ -371,24 +373,25 @@
                         </code></pre>
                     </div>
                 </article>
+
             </div>
         </div>
     </div>
     <footer class="footer-area">
         <div class="container meta">
             <div class="container-inner">
-                <p>
+                <!-- <p>
                     Check out <a href="https://github.com/tomerlichtash/israeli-service-ribbons-css" target="_blank">the
                         project on Github</a> or tinker with <a href="https://codepen.io/loremipsum/pen/GRgqMZw"
                         target="blank">this code pen</a>.
-                </p>
+                </p> -->
                 <p>
                     The ribbon designs are based on public information from the <a
                         href="https://www.mod.gov.il/English/Campaign%20Ribbons/Pages/Service-Ribbons.aspx"
                         target="_blank">MoD</a> website.
                 </p>
                 <p>
-                    This work is an independent development by its author.
+                    This work is an independent development by its author. You can use it freely.
                 </p>
                 <p class="back-to-top"><a href="#top">Back to top</a></p>
                 <div class="langs">
