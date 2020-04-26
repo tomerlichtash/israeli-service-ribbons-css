@@ -13,20 +13,23 @@ body {
 body {
     --linkColor: var(--color2);
     --linkHoverColor: var(--color3);
-
-    --titleSize: 1.6rem;
-    --titleWeight: 700;
-    --abstractTextSize: 1.2rem;
-
     --textColor: var(--color1);
     --itemBackgroundColor: var(--color6);
-
     --grayLabel: var(--color8);
     --infoBgColor: var(--color7);
+
+    --titleSize: 1.6rem;
+    --abstractTextSize: 1.2rem;
+    --articleTitleTextSize: 1rem;
+    
+    --itemLabelFontSize: var(--titleSize);
+    --codeFontSize: 0.8rem;
+    
+    --footerFontSize: 0.8rem;
 }
 
 html, body {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 2rem;
     font-weight: 300;
     margin: 0;
@@ -62,7 +65,7 @@ pre {
 }
 
 code {
-    font-size: 0.8rem;
+    font-size: var(--codeFontSize);
     direction: ltr;
     text-align: left;
     line-height: 1rem;
@@ -97,8 +100,8 @@ header .intro {
     display: inline-block;
     letter-spacing: 0.4rem;
     line-height: 6rem;
+    font-weight: 100;
     color: var(--textColor);
-    font-weight: var(--titleWeight);
     font-size: var(--titleSize);
 }
 .site-title a {
@@ -112,13 +115,13 @@ header .intro {
 
 .item {
     background: var(--itemBackgroundColor);
-    border-radius: 6px;
     box-shadow: var(--itemBoxShadow);
+    transition: var(--baseTransition);
+    border-radius: 6px;
     margin: 1rem 1rem 0 0;
     display: inline-block;
     overflow: hidden;
     position: relative;
-    transition: var(--baseTransition);
     width: 25vw;
     vertical-align: top;
 }
@@ -134,7 +137,7 @@ header .intro {
 .item-label {
     line-height: 6rem;
     color: var(--textColor);
-    font-size: 1.44rem;
+    font-size: var(--itemLabelFontSize);
     letter-spacing: 0.1rem;
     font-weight: 100;
     margin: 0;
@@ -165,41 +168,31 @@ header .intro {
 }
 .item .label {
     font-size: var(--titleSize);
-    font-weight: 900;
     letter-spacing: -0.1rem;
     width: 100%;
 }
 
-.item .read-more {
+.read-more .more-info {
+    border: 1px solid #d0d0d0;
     position: absolute;
-    top: -45px;
+    top: -3rem;
     left: 1rem;
-}
-.item:hover .read-more {
-    top: 1rem;
-    vertical-align: top;
-}
-.item .external-link {
-    transform: scale(0.4);
-}
-.external-link {
-    width: 1.5rem;
-    height: 1.5rem;
-    line-height: 1.5rem;
-    display: inline-block;
-    border: 1px solid #e0e0e0;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
     border-radius: 50%;
-}
-.external-link:hover {
-    background: #f0f0f0;
-}
-
-.more-info {
-    font-size: 1rem;
     font-weight: 900;
+    transition: var(--baseTransition);
 }
 
-
+.item:hover .read-more .more-info {
+    transition: none;
+    top: 1rem;
+}
+.item:hover .read-more .more-info:hover {
+    transition: none;
+    border-color: var(--color3);
+}
 
 /* container */
 .container:not(.content) .container-inner {
@@ -230,7 +223,7 @@ header .intro {
     border-radius: 6px;
 }
 .container.info .container-title {
-    font-weight: 700;
+    /* font-weight: 700; */
     letter-spacing: 0.4rem;
     font-size: var(--titleSize);
     text-transform: uppercase;
@@ -238,8 +231,8 @@ header .intro {
 }
 .container.info .article-title {
     margin: 3rem auto 1rem;
-    font-weight: 100;
-    font-size: 1rem;
+    font-weight: 300;
+    font-size: var(--articleTitleTextSize);
 }
 .container.info .article-title::after {
     border: 5px solid red;
@@ -251,7 +244,6 @@ header .intro {
     top: 0;
 }
 .abstract {
-    font-weight: 500;
     font-size: var(--abstractTextSize);
 }
 
@@ -263,7 +255,7 @@ header .intro {
 }
 
 .container.footer {
-    font-size: 0.8rem;
+    font-size: var(--footerFontSize);
 }
 .container.footer .container-inner {
     padding: 3rem 0;
