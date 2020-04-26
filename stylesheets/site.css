@@ -4,7 +4,7 @@ body {
     --color3: #c0a;
     --color6: #fff;
     --color7: #daede8;
-    --color8: #a0a0a0;
+    --color8: #d0d0d0;
     --itemBoxShadow: 0 0 1rem rgba(0, 0, 0, 0.1);
     --itemBoxShadowHover: 0 0 1rem rgba(0, 0, 0, 0.25);
     --baseTransition: 125ms all ease-in-out;
@@ -67,25 +67,6 @@ code {
     text-align: left;
     line-height: 1rem;
     cursor: text;
-}
-pre {
-    position: relative;
-}
-.item:hover code::before {
-    visibility: visible;
-}
-code::before {
-    position: absolute;
-    top: 0;
-    right: 0;
-    content: 'CSS';
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 900;
-    font-size: 0.7rem;
-    background: var(--grayLabel);
-    color: #fff;
-    padding: 0 0.5rem;
-    visibility: hidden;
 }
 
 .sample {
