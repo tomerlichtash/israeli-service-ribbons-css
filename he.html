@@ -44,9 +44,9 @@
         </h1>
         <div class="container-inner">
             <p class="intro abstract">​​"אותות מערכה" הם אותות לציון השתתפותו של אדם במלחמה, במערכה ובקרב שהתרחשו מאז
-                קום המדינה ועד היום. אותות אלה עשויים מתכת ובד. פרויקט זה עוסק בייצורם בדפדפן באמצעות HTML ו-CSS.
-                <a href="https://tomerlichtash.github.io/israeli-service-ribbons-css/he#how" aria-label="Read more"
-                    title="How does it work? Read more">לפרטים נוספים</a> &raquo;
+                קום המדינה ועד היום. אותות אלה עשויים מתכת ובד. פרויקט זה עוסק בייצורם ב-HTML ו-CSS.
+                <a href="#how" aria-label="Read more"
+                    title="כך ניתן להוסיף אות מערכה לאתר שלך">לפרטים נוספים</a> &raquo;
             </p>
         </div>
     </header>
@@ -303,7 +303,7 @@
         <div class="container-inner">
             <div class="inner">
                 <div class="article-header">
-                    <h2 class="container-title">כיצד לבנות אות מערכה ב-CSS</h2>
+                    <h2 class="container-title">כיצד לבנות אות מערכה</h2>
                     <div class="sample">
                         <figure class="war example-ribbon">
                             <span class="outer"></span>
@@ -313,20 +313,13 @@
                     </div>
                     <span class="abstract">
                         <p>
-                            המשחק מאחורי ייצור אות המערכה בדפדפן הוא בשימוש בכלי CSS בעלי מאפיינים סימטריים (למשל:
-                            flex, border, rgba) ועיצובם על משטח תחום.
-                        </p>
-                        <p>
-                            ניתן לעיין בקוד המקור ב<a
-                                href="https://github.com/tomerlichtash/israeli-service-ribbons-css" target="_blank">דף
-                                הפרויקט ב-Github</a> או לשחק ב<a href="https://codepen.io/loremipsum/pen/GRgqMZw"
-                                target="blank">דמו ב-CodePen</a>.
+                            ייצור אותות מערכה בדפדפן הוא משחק באופי הרב-שכבתי והסימטרי של HTML ו-CSS. כדי להוסיף אות מערכה לאתר שלך יש לעקוב אחר ההוראות הבאות.
                         </p>
                     </span>
 
                 </div>
                 <article>
-                    <h3 class="article-title">הוסיפו את החלק הזה לקובץ ה-HTML.</h3>
+                    <h3 class="article-title">1. יש להוסיף את החלק הזה לקובץ ה-HTML.</h3>
                     <pre><code class="html">
 &lt;!-- a ribbon is a `figure` element, nesting 3 `span` elements --&gt;
 
@@ -339,9 +332,9 @@
                 </article>
                 <article>
                     <div class="article-content">
-                        <h3 class="article-title">הוסיפו את החלק הזה לקובץ ה-CSS.</h3>
+                        <h3 class="article-title">2. יש להוסיף את החלק הזה לקובץ ה-CSS.</h3>
                         <pre><code class="css">
-/*  common ribbon layout uses flex for symmetry purposes */
+/*  common ribbon layout - using `flex` for symmetry purposes */
 
 .war {
     position: relative;
@@ -356,7 +349,7 @@
     z-index: 1;
 }
 
-/*  ribbon variant */
+/*  ribbon variant (you can replace `some-war` with your own war class name) */
 
 .some-war {
     background: #c0a;
@@ -373,7 +366,13 @@
                         </code></pre>
                     </div>
                 </article>
-
+                <p>
+                    זהו. ניתן לעיין בקוד המקור ב<a
+                        href="https://github.com/tomerlichtash/israeli-service-ribbons-css" target="_blank">דף
+                        הפרויקט ב-Github</a> או לשחק בקוד ב<a href="https://codepen.io/loremipsum/pen/GRgqMZw"
+                        target="blank">דמו ב-CodePen</a>.
+                </p>
+                <p class="back-to-top"><a href="#top">חזרה לראש הדף</a></p>
             </div>
         </div>
     </div>
@@ -386,11 +385,10 @@
                         target="_blank">אתר משרד הביטחון</a>.
                 </p>
                 <p>אתר זה הנו עבודה עצמאית ובלתי תלויה. השימוש בה הוא חופשי.</p>
-                <p class="back-to-top"><a href="#top">חזרה לראש הדף</a></p>
-                <div class="langs">
+                <p>
                     <a title="Click here to load an English version of this page" class="switch-lang to-en"
                         href="https://tomerlichtash.github.io/israeli-service-ribbons-css/">English Version</a>
-                </div>
+                </p>
             </div>
         </div>
         <div class="container footer">
@@ -422,7 +420,7 @@
                         title="2019 (CC-BY-NC-SA) Tomer Lichtash">(<a
                             href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"
                             title="Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)">CC</a>)</span>&nbsp;<span><a
-                            target="_blank" href="https://tomerlichtash.com">תומר ליכטש</a>
+                            target="_blank" title="לאתר של תומר ליכטש" href="https://tomerlichtash.com">תומר ליכטש</a>
                     </span>
                 </p>
             </div>
