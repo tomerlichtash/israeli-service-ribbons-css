@@ -144,6 +144,34 @@
     border-left: 10px solid #26972d;
 }
 
+.war_2014 {
+    background: #f55142;
+}
+
+.war_2014 .outer {
+    max-width: 16px;
+    background: #eb2738;
+}
+
+.war_2014 .outer:first-child {
+    left: 14px;
+    border-left: 20px solid #f9d172;
+}
+
+.war_2014 .outer:last-child {
+    right: 14px;
+    border-right: 20px solid #f9d172;
+}
+
+.war_2014 .inner {
+    border-right: 13px solid #f2f6fb;
+    border-left: 13px solid #f2f6fb;
+    background: #055fbe;
+    position: relative;
+    max-width: 25px;
+    margin: 0 0.9rem;
+}
+
 .example-ribbon {
     background: #c0a;
     transition: 125ms all ease-in-out;;
